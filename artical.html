@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iA Copy</title>
+    <script src="js/navbar.js"></script>
+    <style>
+        body {
+            width: 70vw;
+            margin: 0 auto;
+            background-color: #FAFAFA;
+        }
+
+        header {
+            display: block;
+            font-size: 25px;
+            font-family: "Google Sans";
+            padding-top: 8vw;
+            font-weight: 300;
+        }
+
+        #headerShow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #headerPosContainer {
+            display: block;
+
+        }
+
+        .headerPos {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        #moreBtn {
+            display: block;
+            height: 30px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0);
+            width: 30px;
+            background-image: url(img/menu_black_24dp.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #logo {
+            font-weight: 700;
+            color: #000;
+        }
+
+        #logo:hover {
+            color: tomato
+        }
+
+        article {
+            display: block;
+            margin-top: 50px;
+            font-size: 28px;
+            font-weight: 400;
+            font-family: 'Google Sans', 'Source Han Sans SC';
+            line-height: 1.5em;
+        }
+        #headerNav{
+            display: grid;
+            height:0px;
+            opacity: 0;
+            overflow:hidden;
+            margin-top: 20px;
+            grid-template-columns:repeat(3,1fr);
+            grid-gap: 3.5rem 2rem;
+        }
+        .navList{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;    
+        }
+        .navList li{
+            padding-bottom: 10px;
+        }
+        .navList a{
+            text-decoration: none;
+            color: #000;
+        }
+        .navList a:hover{          
+            color: #d7bcff;
+        }
+        b{
+            font-weight:700;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="headerShow">
+            <div id="headerPosContainer">
+                <a hraf="javascript:;" class="headerPos" id="logo">iA</a>
+                <span class="headerPos">/</span>
+                <span class="headerPos">Name</span>
+            </div>
+            <button id="moreBtn"></button>
+        </div>
+        <nav id="headerNav">
+            <ul class="navList">
+                
+                <li><b><a href="">Design</a></b></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Design</a></b></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Design</a></b></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Design</a></b></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Design</a></b></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Design</a></b></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+                <p><b>Get focused.</b> iA Writer offers a unique writing experience that lets you concentrate and clarify
+                your message. Used by half a million people worldwide, its powerful interface is crafted to cut out
+                noise, let you focus on what you want to say, and help you structure and trim your text. Available for
+                Mac, iOS, Windows, and Android.</p>
+                <p><b>Powerhouse.</b> iA Writer is so simple, it’s easy to overlook the wealth of features packed under the
+                hood, from Focus Mode to MS Word export, and PDF-Preview.</p>
+                <p><b>Working hard to keep it minimal.</b> We constantly improve and simplify iA Writer, expand its flexibility and fix occurring issues. See all updates</p>
+                <p><b>Apple AppStore App of the Year 2011, 2012, and 2013.</b> MacStories App of the Year 2019. We win prizes. But what really makes us happy are the notes we get from writers worldwide.</p>
+            </article>
+    </main>
+
+    <script>
+    </script>
+</body>
+
+</html>
