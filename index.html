@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iA Copy Index</title>
+    <script src="js/navbar.js"></script>
+    <style>
+        body {
+            width: 70vw;
+            margin: 0 auto;
+            background-color: #FAFAFA;
+        }
+
+        header{
+            display: block;
+            margin-top: 120px;
+            margin-bottom: 120px;;
+            width:100%;
+            text-align:center;
+        }
+        header h1{
+            
+            font-size: 48px;
+            font-family: "Google Sans";
+            font-weight: 700;
+              
+        }
+
+        article {
+            display: block;
+            margin-top: 50px;
+            font-size: 28px;
+            font-weight: 400;
+            font-family: 'Google Sans', 'Source Han Sans SC';
+            line-height: 1.5em;
+        }
+        .siteNav{
+            display: grid;
+            overflow:hidden;
+            margin-top: 20px;
+            grid-template-columns:repeat(3,1fr);
+            grid-gap: 3.5rem 2rem;
+            font-size: 25px;
+            font-family: "Google Sans";
+            font-weight: 300;
+        }
+        .siteNav#siteNav-Top{
+            height:0px;
+            opacity: 0;
+        }
+        .siteNav#siteNav-inPage{
+            margin-top:100px;
+        }
+        .navList{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;    
+        }
+        .navList li{
+            padding-bottom: 10px;
+        }
+        .navList a{
+            text-decoration: none;
+            color: #000;
+        }
+        .navList a:hover{          
+            color: #d7bcff;
+        }
+        b{
+            font-weight:700;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a>
+            <!-- this can be replaced with the logo(image) of the website. -->
+            <h1>Website Name</h1>
+        </a>
+    </header>
+    <main>
+        <article>
+            <p><b>We architect information. </b>Founded in 2005, iA designs information systems for clients like Wikipedia, NHK and Condé Nast. Our product team makes the best writing app ever.</p>
+        </article>
+        
+    </main>
+    <footer>
+        <nav class="siteNav" id="siteNav-inPage">
+            <ul class="navList">
+                <li><b><a href="">Design</a></b></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Subscribe</a></b></li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">RSS</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Address</a></b></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Category1</a></b></li>
+                <li><a href="">Artical1</a></li>
+                <li><a href="">Artical2</a></li>
+                <li><a href="">more...</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Category2</a></b></li>
+                <li><a href="">Artical1</a></li>
+                <li><a href="">Artical2</a></li>
+                <li><a href="">more...</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Category3</a></b></li>
+                <li><a href="">Artical1</a></li>
+                <li><a href="">Artical2</a></li>
+                <li><a href="">more...</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
