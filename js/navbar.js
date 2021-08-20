@@ -1,17 +1,17 @@
 window.addEventListener('load', () => {
     let headerBtn = document.querySelector('#moreBtn');
-    let headerNav = document.querySelector('#headerNav');
+    let siteNav = document.querySelector('.siteNav');
     let navFullHeight = 390; //Because the navbar's display is none, and I haven't found a way to get it's height, I will hard code this.Will Change later.
     let animateFold = true; //true => the next animation should unfold the nav bar
 
     headerBtn.addEventListener('click', function () {
         if (animateFold) { //the process should unfold the navbar
             animateFold = false;
-            setSmoothAnimate(headerNav, navFullHeight)
+            setSmoothAnimate(siteNav, navFullHeight)
         }
         else {
             animateFold = true;
-            setSmoothAnimate(headerNav, 0)
+            setSmoothAnimate(siteNav, 0)
         }
     })
 

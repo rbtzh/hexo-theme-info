@@ -18,8 +18,8 @@
             display: block;
             font-size: 25px;
             font-family: "Google Sans";
-            padding-top: 8vw;
             font-weight: 300;
+            padding-top: 8vw;  
         }
 
         #headerShow {
@@ -66,14 +66,22 @@
             font-family: 'Google Sans', 'Source Han Sans SC';
             line-height: 1.5em;
         }
-        #headerNav{
+        .siteNav{
             display: grid;
-            height:0px;
-            opacity: 0;
             overflow:hidden;
             margin-top: 20px;
             grid-template-columns:repeat(3,1fr);
             grid-gap: 3.5rem 2rem;
+            font-size: 25px;
+            font-family: "Google Sans";
+            font-weight: 300;
+        }
+        .siteNav#siteNav-Top{
+            height:0px;
+            opacity: 0;
+        }
+        .siteNav#siteNav-inPage{
+            margin-top:100px;
         }
         .navList{
             list-style-type: none;
@@ -100,20 +108,13 @@
     <header>
         <div id="headerShow">
             <div id="headerPosContainer">
-                <a hraf="javascript:;" class="headerPos" id="logo">iA</a>
+                <a hraf="javascript:;" class="headerPos" id="logo">Blog Name</a>
                 <span class="headerPos">/</span>
-                <span class="headerPos">Name</span>
+                <span class="headerPos">Artical Name</span>
             </div>
             <button id="moreBtn"></button>
         </div>
-        <nav id="headerNav">
-            <ul class="navList">
-                
-                <li><b><a href="">Design</a></b></li>
-                <li><a href="">News</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">About Us</a></li>
-            </ul>
+        <nav class="siteNav" id="siteNav-Top">
             <ul class="navList">
                 <li><b><a href="">Design</a></b></li>
                 <li><a href="">News</a></li>
@@ -121,28 +122,34 @@
                 <li><a href="">About Us</a></li>
             </ul>
             <ul class="navList">
-                <li><b><a href="">Design</a></b></li>
+                <li><b><a href="">Subscribe</a></b></li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">RSS</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Address</a></b></li>
                 <li><a href="">News</a></li>
                 <li><a href="">Blog</a></li>
                 <li><a href="">About Us</a></li>
             </ul>
             <ul class="navList">
-                <li><b><a href="">Design</a></b></li>
-                <li><a href="">News</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">About Us</a></li>
+                <li><b><a href="">Category1</a></b></li>
+                <li><a href="">Artical1</a></li>
+                <li><a href="">Artical2</a></li>
+                <li><a href="">more...</a></li>
             </ul>
             <ul class="navList">
-                <li><b><a href="">Design</a></b></li>
-                <li><a href="">News</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">About Us</a></li>
+                <li><b><a href="">Category2</a></b></li>
+                <li><a href="">Artical1</a></li>
+                <li><a href="">Artical2</a></li>
+                <li><a href="">more...</a></li>
             </ul>
             <ul class="navList">
-                <li><b><a href="">Design</a></b></li>
-                <li><a href="">News</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">About Us</a></li>
+                <li><b><a href="">Category3</a></b></li>
+                <li><a href="">Artical1</a></li>
+                <li><a href="">Artical2</a></li>
+                <li><a href="">more...</a></li>
             </ul>
         </nav>
     </header>
@@ -160,8 +167,46 @@
             </article>
     </main>
 
-    <script>
-    </script>
+    <footer>
+        <nav class="siteNav" id="siteNav-inPage">
+            <ul class="navList">
+                <li><b><a href="">Design</a></b></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Subscribe</a></b></li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">RSS</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Address</a></b></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Category1</a></b></li>
+                <li><a href="">Artical1</a></li>
+                <li><a href="">Artical2</a></li>
+                <li><a href="">more...</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Category2</a></b></li>
+                <li><a href="">Artical1</a></li>
+                <li><a href="">Artical2</a></li>
+                <li><a href="">more...</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Category3</a></b></li>
+                <li><a href="">Artical1</a></li>
+                <li><a href="">Artical2</a></li>
+                <li><a href="">more...</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 
 </html>
