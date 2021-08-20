@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iA Copy List</title>
+    <script src="js/navbar.js"></script>
+    <style>
+        body {
+            width: 70vw;
+            margin: 0 auto;
+            background-color: #FAFAFA;
+        }
+         a{
+            text-decoration: none;
+            color: #000;
+        }
+        a:hover{          
+            color: #d7bcff;
+        }
+
+        header {
+            display: block;
+            font-size: 25px;
+            font-family: "Google Sans";
+            font-weight: 300;
+            padding-top: 8vw;  
+        }
+
+        #headerShow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #headerPosContainer {
+            display: block;
+
+        }
+
+        .headerPos {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        #moreBtn {
+            display: block;
+            height: 30px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0);
+            width: 30px;
+            background-image: url(img/menu_black_24dp.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #logo {
+            font-weight: 700;
+            color: #000;
+        }
+
+        #logo:hover {
+            color: tomato
+        }
+
+        article {
+            display: block;
+            margin-top: 50px;
+            font-size: 28px;
+            font-weight: 400;
+            font-family: 'Google Sans', 'Source Han Sans SC';
+            line-height: 1.5em;
+        }
+        .siteNav{
+            display: grid;
+            overflow:hidden;
+            margin-top: 20px;
+            grid-template-columns:repeat(3,1fr);
+            grid-gap: 3.5rem 2rem;
+            font-size: 25px;
+            font-family: "Google Sans";
+            font-weight: 300;
+        }
+        .siteNav#siteNav-Top{
+            height:0px;
+            opacity: 0;
+        }
+        .siteNav#siteNav-inPage{
+            margin-top:100px;
+        }
+        .navList{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;    
+        }
+        .navList li{
+            padding-bottom: 10px;
+        }
+        
+        b{
+            font-weight:700;
+        }
+
+        .articleList{
+            margin-top:76px;
+        }
+        .article-entrance{
+            display:flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            box-sizing: border-box;
+            font-size: 24px;
+            font-weight: 400;
+            font-family: 'Google Sans', 'Source Han Sans SC';
+            line-height: 1.5em;
+            margin-bottom: 35px;
+        }
+        .article-title-date{
+            flex-basis: 33.33333333%;
+            max-width: 33.33333333%;
+        }
+        .article-title-date h2{
+            font-size:24px;
+            font-weight:700;
+            line-height:1.5em;
+            margin:0;
+        }
+        .article-title-date time{
+            display:block;
+            margin-top:10px;
+        }
+        .article-discription{
+            flex-basis: 66.66666666%;
+            max-width: 66.66666666%;
+            
+        }
+        .article-discription p{
+            margin:0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="headerShow">
+            <div id="headerPosContainer">
+                <a hraf="javascript:;" class="headerPos" id="logo">Blog Name</a>
+                <span class="headerPos">/</span>
+                <span class="headerPos">List Name</span>
+            </div>
+            <button id="moreBtn"></button>
+        </div>
+        <nav class="siteNav" id="siteNav-Top">
+            <ul class="navList">
+                <li><b><a href="">Design</a></b></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Subscribe</a></b></li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">RSS</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Address</a></b></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Category1</a></b></li>
+                <li><a href="">Artical1</a></li>
+                <li><a href="">Artical2</a></li>
+                <li><a href="">more...</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Category2</a></b></li>
+                <li><a href="">Artical1</a></li>
+                <li><a href="">Artical2</a></li>
+                <li><a href="">more...</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Category3</a></b></li>
+                <li><a href="">Artical1</a></li>
+                <li><a href="">Artical2</a></li>
+                <li><a href="">more...</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <p><b>Blog. </b>Find out what we’re thinking about with a look behind the curtain at the things that make us tick.</p>
+        </article>
+        <div class="articleList">
+            <div class="article-entrance">
+                <div class="article-title-date">
+                    <a href="javascript:;"><h2>Apple cuts 30% commission to 15% for small developers</h2></a>
+                    <time>11.18.2020</time>
+                </div>
+                <div class="article-discription">
+                    <a href="javascript:;"><p>Apple will lower its commission to 15% if you make under one million US dollars per year. For small developers, this is fantastic news and overall it’s a good step in the right direction. In the bigger picture, more steps need to follow. <span class="little-arrow">→</span></p></a>
+                </div>
+            </div>
+            <div class="article-entrance">
+                <div class="article-title-date">
+                    <a href="javascript:;"><h2>How to Think Different</h2></a>
+                    <time>8.21.2020</time>
+                </div>
+                <div class="article-discription">
+                    <a href="javascript:;"><p>This week we published two long posts on Monopolies, the Apple Tax, and Subscriptions. Both articles come to the conclusion that lowering the 30% fee Apple charges developers would benefit everyone. The tax is at the core of their Antitrust case, at the core of the developer's business model. And in the end, it is in our common customer's interest to lower it, because profitable development produces better software. <span class="little-arrow">→</span></p></a>
+                </div>
+            </div>
+            <div class="article-entrance">
+                <div class="article-title-date">
+                    <a href="javascript:;"><h2>Subscription or no subscription? That is not the question.</h2></a>
+                    <time>8.20.2020</time>
+                </div>
+                <div class="article-discription">
+                    <a href="javascript:;"><p>Companies selling apps via subscriptions use drama to sell: "Either subscription or we die.” As customers, we don't like to add more recurring payments to our monthly credit card bill. Begrudgingly we all accept subscriptions as a new reality. There is a limit to how many we can add to our credit card bill before we ask: Is this necessary? Is there only one business model for software, and, well, for anything now? <span class="little-arrow">→</span></p></a>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <nav class="siteNav" id="siteNav-inPage">
+            <ul class="navList">
+                <li><b><a href="">Design</a></b></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Subscribe</a></b></li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">RSS</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Address</a></b></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Category1</a></b></li>
+                <li><a href="">Artical1</a></li>
+                <li><a href="">Artical2</a></li>
+                <li><a href="">more...</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Category2</a></b></li>
+                <li><a href="">Artical1</a></li>
+                <li><a href="">Artical2</a></li>
+                <li><a href="">more...</a></li>
+            </ul>
+            <ul class="navList">
+                <li><b><a href="">Category3</a></b></li>
+                <li><a href="">Artical1</a></li>
+                <li><a href="">Artical2</a></li>
+                <li><a href="">more...</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

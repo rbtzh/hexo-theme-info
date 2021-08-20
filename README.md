@@ -23,6 +23,7 @@ A theme for hexo, a copy🐱 of iA.net, hoprfully. Written by zhao-robert with L
 
 - [ ] Learn GSAP (The one [iA's Website](https://ia.net) using) to add animation.
 - [ ] Responsive Design
+- [ ] Transition of a tags
 - [ ] Add Google Analytics  (Not sure.)
 - [ ] more......
 
