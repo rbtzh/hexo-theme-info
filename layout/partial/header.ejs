@@ -1,4 +1,92 @@
+<% if( page.path == 'index.html'){ %>
 <header>
-    <h1 style="color:<%= color %>;"><%= title %> <%= color %></h1>
-    <p>this should be a header</p>
+    <a>
+        <!-- this can be replaced with the logo(image) of the website. -->
+        <h1>Website Name</h1>
+    </a>
 </header>
+<% } else { %>
+<script>
+    window.addEventListener('load', () => {
+    let headerBtn = document.querySelector('#moreBtn');
+    let siteNav = document.querySelector('.siteNav');
+    let navFullHeight = 390; //Because the navbar's display is none, and I haven't found a way to get it's height, I will hard code this.Will Change later.
+    let animateFold = true; //true => the next animation should unfold the nav bar
+
+    headerBtn.addEventListener('click', function () {
+        if (animateFold) { //the process should unfold the navbar
+            animateFold = false;
+            setSmoothAnimate(siteNav, navFullHeight)
+        }
+        else {
+            animateFold = true;
+            setSmoothAnimate(siteNav, 0)
+        }
+    })
+
+    function setSmoothAnimate(obj, target, callback){
+        clearInterval(obj.timer)
+        obj.timer = setInterval(function(){
+            let move = (target - obj.offsetHeight)/10;
+            move=move > 0 ? Math.ceil(move):Math.floor(move);
+            obj.style.height = obj.offsetHeight + move + 'px';
+            obj.style.opacity = (obj.offsetHeight / navFullHeight);
+            if(obj.offsetHeight == target){
+                    clearInterval(obj.timer)
+                    if(callback){
+                        callback()
+                    }
+            }   
+        }, 15)
+    }
+})
+</script>
+<header>
+    <div id="headerShow">
+        <div id="headerPosContainer">
+            <a hraf="javascript:;" class="headerPos" id="logo">Blog Name</a>
+            <span class="headerPos">/</span>
+            <span class="headerPos">Article Name</span>
+        </div>
+        <button id="moreBtn">more</button>
+    </div>
+    <nav class="siteNav siteNavTop">
+        <ul class="navList">
+            <li><b><a href="">Design</a></b></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">About Us</a></li>
+        </ul>
+        <ul class="navList">
+            <li><b><a href="">Subscribe</a></b></li>
+            <li><a href="">Github</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">RSS</a></li>
+        </ul>
+        <ul class="navList">
+            <li><b><a href="">Address</a></b></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">About Us</a></li>
+        </ul>
+        <ul class="navList">
+            <li><b><a href="">Category1</a></b></li>
+            <li><a href="">Artical1</a></li>
+            <li><a href="">Artical2</a></li>
+            <li><a href="">more...</a></li>
+        </ul>
+        <ul class="navList">
+            <li><b><a href="">Category2</a></b></li>
+            <li><a href="">Artical1</a></li>
+            <li><a href="">Artical2</a></li>
+            <li><a href="">more...</a></li>
+        </ul>
+        <ul class="navList">
+            <li><b><a href="">Category3</a></b></li>
+            <li><a href="">Artical1</a></li>
+            <li><a href="">Artical2</a></li>
+            <li><a href="">more...</a></li>
+        </ul>
+    </nav>
+</header>
+<% } %>

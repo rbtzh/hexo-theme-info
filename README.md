@@ -22,6 +22,8 @@ A theme for hexo, a copy🐱 of iA.net, hoprfully. Written by zhao-robert with L
 ## THE *more granularity*  PLAN
 
 - [ ] Learn GSAP (The one [iA's Website](https://ia.net) using) to add animation.
+- [ ] let header shows the current address
+- [ ] find out how to add css file using relative path
 - [ ] Responsive Design
 - [ ] Transition of a tags
 - [ ] Add Google Analytics  (Not sure.)

@@ -4,14 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            width: 70vw;
+            margin: 0 auto;
+            background-color: #FAFAFA;
+            font-family: 'Google Sans', 'Source Han Sans SC', sans-serif;
+            font-weight: 300;
+            font-size:28px;
+
+        }
+
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        a:hover{          
+            color: #d7bcff; 
+        }
+        b{
+            font-weight:700;
+        }
+        header {
+            display: block;
+            font-size: 25px;  
+            padding-top: 8vw;  
+        }
+        article {
+            display: block;
+            margin-top: 50px;
+            line-height: 1.5em;
+        }
+        #headerShow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #headerPosContainer {
+            display: block;
+
+        }
+
+        .headerPos {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        #moreBtn {
+            display: block;
+            height: 30px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0);
+            width: 30px;
+            background-image: url(../../source/img/menu_black_24dp.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #logo {
+            font-weight: 700;
+            color: #000;
+        }
+
+        #logo:hover {
+            color: tomato
+        }
+        .siteNav{
+            display: grid;
+            overflow:hidden;
+            margin-top: 20px;
+            grid-template-columns:repeat(3,1fr);
+            grid-gap: 3.5rem 2rem;
+            font-size: 25px;
+            font-weight: 300;
+        }
+        .siteNav.siteNavTop{
+            height:0px;
+            opacity: 0;
+        }
+        .siteNav.siteNavinPage{
+            margin-top:100px;
+        }
+        .navList{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;    
+        }
+        .navList li{
+            padding-bottom: 10px;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
+    <p>'debugg' current path : <%- path %></p>
     <%- partial('partial/header', {title: 'yanbo site', color:'#FF0000'})%>
-    This is the layout.ejs file.
-    <br>
     <%- body %>
-    <br>
-    This is the layout.ejs file.
+    <%- partial('partial/footer', {title: 'yanbo site', color:'#FF0000'})%>
 </body>
 </html>
