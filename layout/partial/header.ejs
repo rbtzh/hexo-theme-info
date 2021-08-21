@@ -44,11 +44,15 @@
 <header>
     <div id="headerShow">
         <div id="headerPosContainer">
-            <a hraf="javascript:;" class="headerPos" id="logo">Blog Name</a>
+            <a hraf="javascript:;" class="headerPos" id="logo"><%= config.title %></a>
+            <% if(page.date) {%>
+                <span class="headerPos">/</span>
+                <span class="headerPos"><%=page.date%></span>
+            <% } %>
             <span class="headerPos">/</span>
-            <span class="headerPos">Article Name</span>
+            <span class="headerPos"><%=page.title%></span>
         </div>
-        <button id="moreBtn">more</button>
+        <button id="moreBtn">BUTTON</button>
     </div>
     <nav class="siteNav siteNavTop">
         <ul class="navList">
