@@ -1,0 +1,35 @@
+.articleList{
+    margin-top:76px;
+}
+.article-entrance{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-bottom: 35px;
+}
+.article-title-date{
+    flex-basis: 33.33333333%;
+    max-width: 33.33333333%;
+}
+.article-title-date h2{
+    font-size:24px;
+    font-weight:700;
+    line-height:1.5em;
+    margin:0;
+}
+.article-title-date time{
+    display:block;
+    margin-top:10px;
+}
+.article-discription{
+    flex-basis: 66.66666666%;
+    max-width: 66.66666666%;
+    
+}
+.article-discription p{
+    margin:0;
+}

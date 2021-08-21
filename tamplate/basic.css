@@ -1,0 +1,30 @@
+body {
+    width: 70vw;
+    margin: 0 auto;
+    background-color: #FAFAFA;
+    font-family: 'Google Sans', 'Source Han Sans SC', sans-serif;
+    font-weight: 300;
+    font-size:28px;
+
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{          
+    color: #d7bcff; 
+}
+b{
+    font-weight:700;
+}
+header {
+    display: block;
+    font-size: 25px;  
+    padding-top: 8vw;  
+}
+article {
+    display: block;
+    margin-top: 50px;
+    line-height: 1.5em;
+}

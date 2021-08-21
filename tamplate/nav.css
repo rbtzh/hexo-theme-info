@@ -1,0 +1,59 @@
+#headerShow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headerPosContainer {
+    display: block;
+
+}
+
+.headerPos {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#moreBtn {
+    display: block;
+    height: 30px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    width: 30px;
+    background-image: url(../source/img/menu_black_24dp.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#logo {
+    font-weight: 700;
+    color: #000;
+}
+
+#logo:hover {
+    color: tomato
+}
+.siteNav{
+    display: grid;
+    overflow:hidden;
+    margin-top: 20px;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap: 3.5rem 2rem;
+    font-size: 25px;
+    font-weight: 300;
+}
+.siteNav.siteNavTop{
+    height:0px;
+    opacity: 0;
+}
+.siteNav.siteNavinPage{
+    margin-top:100px;
+}
+.navList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;    
+}
+.navList li{
+    padding-bottom: 10px;
+}
