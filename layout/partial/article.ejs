@@ -1,12 +1,18 @@
 <style>
-    article h1{
-        font-size:38px;
-    }
     article h2{
         font-size: 30px;
     }
     article h3{
         font-size: 28px;
+    }
+    article h4{
+        font-size: 26px;
+    }
+    article h5{
+        font-size: 25px;
+    }
+    article h6{
+        font-size: 24px;
     }
     article img{
         max-width:100%;
@@ -18,7 +24,6 @@
         background-color: rgb(231, 231, 231);
         font-size:18px;
         line-height:1.5rem;
-        font-family:'Cascadia Code', monospace;
         padding:10px;
         overflow: auto;
         border-radius: 5px;
@@ -41,5 +46,15 @@
     figure.highlight td.code{
         padding-left:1rem;
     }
+    div.endDivider{
+        text-align:center;
+        margin:30px auto;
+        color: #464646;
+        background-color: #E7E7E7;
+        border-radius: 5px;
+        width: 33vw;
+    }
+
 </style>
 <%- page.content %>
+<div class="endDivider">End</div>
