@@ -1,0 +1,70 @@
+<%# use topOrPage to designate whether needs to show or not %> 
+<%# 'top' means hide by default, other means show by default %> 
+<style>
+    .siteNav{
+            display: grid;
+            overflow:hidden;
+            margin-top: 20px;
+            grid-template-columns:repeat(3,1fr);
+            grid-gap: 3.5rem 2rem;
+            font-size: 25px;
+            font-weight: 300;
+        }
+        .siteNav.siteNavTop{
+            height:0px;
+            opacity: 0;
+        }
+        .siteNav.siteNavinPage{
+            margin-top:100px;
+        }
+        .navList{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;    
+        }
+        .navList li{
+            padding-bottom: 10px;
+        }
+</style>
+<% if(topOrPage == 'top') { %>
+<nav class="siteNav siteNavTop">
+<% } else { %>
+<nav class="siteNav siteNavPage">
+<% } %>
+    <ul class="navList">
+        <li><b><a href="">Design</a></b></li>
+        <li><a href="">News</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">About Us</a></li>
+    </ul>
+    <ul class="navList">
+        <li><b><a href="">Subscribe</a></b></li>
+        <li><a href="">Github</a></li>
+        <li><a href="">Twitter</a></li>
+        <li><a href="">RSS</a></li>
+    </ul>
+    <ul class="navList">
+        <li><b><a href="">Address</a></b></li>
+        <li><a href="">News</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">About Us</a></li>
+    </ul>
+    <ul class="navList">
+        <li><b><a href="">Category1</a></b></li>
+        <li><a href="">Artical1</a></li>
+        <li><a href="">Artical2</a></li>
+        <li><a href="">more...</a></li>
+    </ul>
+    <ul class="navList">
+        <li><b><a href="">Category2</a></b></li>
+        <li><a href="">Artical1</a></li>
+        <li><a href="">Artical2</a></li>
+        <li><a href="">more...</a></li>
+    </ul>
+    <ul class="navList">
+        <li><b><a href="">Category3</a></b></li>
+        <li><a href="">Artical1</a></li>
+        <li><a href="">Artical2</a></li>
+        <li><a href="">more...</a></li>
+    </ul>
+</nav>
