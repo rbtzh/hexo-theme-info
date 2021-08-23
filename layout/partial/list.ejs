@@ -1,0 +1,72 @@
+<style>
+    .articleList{
+    margin-top:76px;
+}
+.list-entrance{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-bottom: 35px;
+}
+.list-title-date{
+    flex-basis: 33.33333333%;
+    max-width: 33.33333333%;
+}
+.list-title-date h2{
+    font-size:24px;
+    font-weight:700;
+    line-height:1.5em;
+    margin:0;
+}
+.list-title-date time{
+    display:block;
+    margin-top:10px;
+}
+.list-title-date address.author{
+    display:block;
+    margin-top:10px;
+}
+.list-discription{
+    flex-basis: 66.66666666%;
+    max-width: 66.66666666%;
+    
+}
+.list-discription p{
+    margin:0;
+}
+</style>
+<% if (listType === 'allBlogs') { %>
+ 
+<% } %>
+<div class="articleList">
+<% page.posts.each(function (post) { %>
+    <div class="list-entrance">
+        <div class="list-title-date">
+            <a href="<%=config.root + post.path%>"><h2><%=post.title%></h2></a>
+            <% if (post.date) { %>
+                <time><%- post.date.format('YYYY MM DD') %></time>
+            <% } %>
+            <% if (post.author) { %>
+                <address class="author">By <%= post.author %></address>
+            <% } %>
+            
+        </div>
+        <div class="list-discription">
+            <a href="<%=config.root + post.path%>">
+                <p> 
+                    <%if(post.excerpt) {%>
+                        <%- strip_html(post.excerpt) %>
+                        <%}else{%>
+                        <%- strip_html(truncate(post.content,{length: theme.reading.entry_char_excerpt }).split(/[。.]+/, theme.reading.entry_sentence_excerpt)) %>
+                        <%}%>
+                    <span class="little-arrow">→</span>
+                </p>
+            </a>
+        </div>
+    </div>
+<% }); %>
+</div>

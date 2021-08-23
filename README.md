@@ -25,6 +25,7 @@ A theme for hexo, a copy🐱 of iA.net, hoprfully. Written by zhao-robert with L
 - [ ] let header shows the current address
 - [ ] find out how to add css file using relative path
 - [ ] Responsive Design
+- [ ] Dark mode
 - [ ] Transition of a tags
 - [ ] Add Google Analytics  (Not sure.)
 - [ ] more......

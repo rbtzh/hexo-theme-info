@@ -80,11 +80,17 @@
         }, 15)
     }
 })
+
+console.log('<%= page.categories[1] %>')
 </script>
 <header>
     <div id="headerShow">
         <div id="headerPosContainer">
             <a hraf="javascript:;" class="headerPos" id="logo"><%= config.title %></a>
+            <% if(page.categories) {%>
+                <span class="headerPos">/</span>
+                <span class="headerPos"><%= page.categories %></span>
+            <% } %>
             <% if(page.date) {%>
                 <span class="headerPos">/</span>
                 <time class="headerPos"><%= page.date.format('YYYY MM DD')%></time>
