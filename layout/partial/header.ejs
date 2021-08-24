@@ -13,6 +13,7 @@
         .headerPos {
             display: inline-block;
             margin-right: 10px;
+            cursor:default;
         }
 
         #moreBtn {
@@ -80,20 +81,34 @@
         }, 15)
     }
 })
-
-console.log('<%= page.categories[1] %>')
 </script>
 <header>
     <div id="headerShow">
         <div id="headerPosContainer">
-            <a hraf="javascript:;" class="headerPos" id="logo"><%= config.title %></a>
-            <% if(page.categories) {%>
+            <a hraf="<%= config.root + "index.html" %>" class="headerPos" id="logo"><%= config.title %></a>
+            <% if(page.categories && page.categories.data.length) {%>
                 <span class="headerPos">/</span>
-                <span class="headerPos"><%= page.categories %></span>
+                <% for(const item of page.categories.data) { %>
+                    <a 
+                      href="<%= url_for(item.path) %>" 
+                      class="post-meta-link headerPos">
+                      <%= item.name %>
+                    </a>
+                <% } %>
+            <% } %>
+            <% if (page.path.includes('categories/')) { %>
+                <span class="headerPos">/</span>
+                <a class="headerPos" href="">categories</a>
+                <span class="headerPos">/</span>
+                <span class="headerPos"><%- page.category %></span>
+            <% } %>
+            <% if (page.path.includes('tags/')) { %>
+                <span class="headerPos">/</span>
+                <span class="headerPos">tag</span>
             <% } %>
             <% if(page.date) {%>
                 <span class="headerPos">/</span>
-                <time class="headerPos"><%= page.date.format('YYYY MM DD')%></time>
+                <time class="headerPos"><%= page.date.format(config.date_format)%></time>
             <% } %>
             <% if(page.author) {%>
                 <span class="headerPos">/</span>

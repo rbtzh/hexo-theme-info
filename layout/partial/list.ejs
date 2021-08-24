@@ -30,12 +30,12 @@
     display:block;
     margin-top:10px;
 }
-.list-discription{
+.list-excerpt{
     flex-basis: 66.66666666%;
     max-width: 66.66666666%;
     
 }
-.list-discription p{
+.list-excerpt p{
     margin:0;
 }
 </style>
@@ -48,25 +48,23 @@
         <div class="list-title-date">
             <a href="<%=config.root + post.path%>"><h2><%=post.title%></h2></a>
             <% if (post.date) { %>
-                <time><%- post.date.format('YYYY MM DD') %></time>
+                <time><%- post.date.format(config.date_format) %></time>
             <% } %>
             <% if (post.author) { %>
                 <address class="author">By <%= post.author %></address>
             <% } %>
             
         </div>
-        <div class="list-discription">
+        <div class="list-excerpt">
             <a href="<%=config.root + post.path%>">
                 <p> 
                     <%if(post.excerpt) {%>
                             <%- strip_html(post.excerpt) %>
                         <%}else{%>
-                            <div class='TEST'>
                             <% if (theme.list.limit_generated_excerpt) { %>
                                 <%- strip_html(post.content.substring(post.content.indexOf('<p>')+3, post.content.indexOf('</p>'))).split(/[。.]+/, theme.list.limit_generated_sentence_excerpt) %>
                             <% } else {%>
                             <%- strip_html(post.content.substring(post.content.indexOf('<p>')+3, post.content.indexOf('</p>'))) %>
-                                </div>
                             <% } %>
                         <%}%>
                     <span class="little-arrow">→</span>

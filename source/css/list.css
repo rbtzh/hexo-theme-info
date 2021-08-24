@@ -25,11 +25,11 @@
     display:block;
     margin-top:10px;
 }
-.list-discription{
+.list-excerpt{
     flex-basis: 66.66666666%;
     max-width: 66.66666666%;
     
 }
-.list-discription p{
+.list-excerpt p{
     margin:0;
 }
