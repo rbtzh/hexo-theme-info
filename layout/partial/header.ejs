@@ -98,14 +98,16 @@
             <% } %>
             <% if (page.path.includes('categories/')) { %>
                 <span class="headerPos">/</span>
-                <a class="headerPos" href="">categories</a>
+                <a class="headerPos" href="">category</a>
                 <span class="headerPos">/</span>
                 <span class="headerPos"><%- page.category %></span>
             <% } %>
             <% if (page.path.includes('tags/')) { %>
                 <span class="headerPos">/</span>
                 <span class="headerPos">tag</span>
-            <% } %>
+                <span class="headerPos">/</span>
+                <span class="headerPos"><%- page.tag %></span>
+                <% } %>
             <% if(page.date) {%>
                 <span class="headerPos">/</span>
                 <time class="headerPos"><%= page.date.format(config.date_format)%></time>

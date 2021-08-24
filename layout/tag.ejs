@@ -1,1 +1,12 @@
-<h1>This is a tag</h1>
+<% page.title = page.tag %>
+
+<style>
+    header{
+    text-align: center;
+}
+</style>
+
+<main>
+    <h1>“<%- page.tag %>”</h1>
+    <%- partial('partial/list', {listType:'allBlogs'})%>
+</main>
