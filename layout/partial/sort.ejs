@@ -77,7 +77,7 @@
         margin:0;
         margin-bottom: 26px;
     }
-    .categoryBlocksContainer ul.categoryBlocks span.more{
+    .categoryBlocksContainer ul.categoryBlocks .more{
         font-size:33px;
         font-weight:500;
         padding:0;
@@ -90,20 +90,24 @@
     <% for(const item of site.categories.data) { %>
         <ul class="categoryBlocks">
             <li><h2><a href="<%= url_for(item.path) %>"><%= item.slug %></a></h2></li>
-            <li><h3>Apple cuts 30% commission to 15% for small developers. -&nbsp;></h3></li>
-            <li><h3>Why is Facebook not Paying the Apple Tax? -&nbsp;></h3></li>
-            <li><h3>How to Think Different -&nbsp;></h3></li>
-            <li><span class="more">more...</span></li>
+            <% for( let i = 0; i < theme.sort.limit_generate_title; i++ ) { %>
+                <% if (item.posts.data[i]) { %>
+                    <li><h3><a href="<%= config.root + item.posts.data[i].path %>"><%= item.posts.data[i].title %> -&nbsp;></a></h3></li>
+                <% } %>
+            <% } %>
+            <li><a class="more" href="<%= url_for(item.path) %>">more...</a></li>
         </ul>
     <% } %>
 <% } else if(sortType == 'tags'){%>
     <% for(const item of site.tags.data) { %>
         <ul class="categoryBlocks">
             <li><h2><a href="<%= url_for(item.path) %>"><%= item.slug %></a></h2></li>
-            <li><h3>Apple cuts 30% commission to 15% for small developers. -&nbsp;></h3></li>
-            <li><h3>Why is Facebook not Paying the Apple Tax? -&nbsp;></h3></li>
-            <li><h3>How to Think Different -&nbsp;></h3></li>
-            <li><span class="more">more...</span></li>
+            <% for( let i = 0; i < theme.sort.limit_generate_title; i++ ) { %>
+                <% if (item.posts.data[i]) { %>
+                    <li><h3><a href="<%= config.root + item.posts.data[i].path %>"><%= item.posts.data[i].title %> -&nbsp;></a></h3></li>
+                <% } %>
+            <% } %>
+            <li><a class="more" href="<%= url_for(item.path)%>">more...</a></li>
         </ul>
     <% } %>
 <% } else {%>
