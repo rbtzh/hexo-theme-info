@@ -1,0 +1,113 @@
+<style>
+    .categoryBlocksContainer{
+        font-family: inter;
+        display:flex;
+        flex-flow:row wrap;
+        justify-content: space-between;
+        width:100%;
+        padding:0;
+        margin:0;
+        margin-top:78px;
+    }
+    .categoryBlocksContainer ul.categoryBlocks{
+        display:block;
+        width:45%;
+        margin:0;
+        padding:0;
+        list-style-type: none;
+        margin-bottom: 104px;
+    }
+    .categoryBlocksContainer ul.categoryBlocks li{
+        padding:0;
+    }
+    .categoryBlocksContainer ul.categoryBlocks h2{
+        font-size:36px;
+        font-weight:900;
+        padding:0;
+        margin:0;
+        margin-bottom: 54px;
+    }
+    .categoryBlocksContainer ul.categoryBlocks h3{
+        font-size:33px;
+        font-weight:500;
+        padding:0;
+        margin:0;
+        margin-bottom: 26px;
+    }
+    .categoryBlocksContainer ul.categoryBlocks span.more{
+        font-size:33px;
+        font-weight:500;
+        padding:0;
+        margin:0;
+    }h1.pageName{
+        font-size: 64px;
+    }
+    .categoryBlocksContainer{
+        font-family: inter;
+        display:flex;
+        flex-flow:row wrap;
+        justify-content: space-between;
+        width:100%;
+        padding:0;
+        margin:0;
+        margin-top:78px;
+    }
+    .categoryBlocksContainer ul.categoryBlocks{
+        display:block;
+        width:45%;
+        margin:0;
+        padding:0;
+        list-style-type: none;
+        margin-bottom: 104px;
+    }
+    .categoryBlocksContainer ul.categoryBlocks li{
+        padding:0;
+    }
+    .categoryBlocksContainer ul.categoryBlocks h2{
+        font-size:36px;
+        font-weight:900;
+        padding:0;
+        margin:0;
+        margin-bottom: 54px;
+    }
+    .categoryBlocksContainer ul.categoryBlocks h3{
+        font-size:33px;
+        font-weight:500;
+        padding:0;
+        margin:0;
+        margin-bottom: 26px;
+    }
+    .categoryBlocksContainer ul.categoryBlocks span.more{
+        font-size:33px;
+        font-weight:500;
+        padding:0;
+        margin:0;
+    }
+</style>
+
+<div class="categoryBlocksContainer">
+<% if (sortType == 'categories') { %>
+    <% for(const item of site.categories.data) { %>
+        <ul class="categoryBlocks">
+            <li><h2><a href="<%= url_for(item.path) %>"><%= item.slug %></a></h2></li>
+            <li><h3>Apple cuts 30% commission to 15% for small developers. -&nbsp;></h3></li>
+            <li><h3>Why is Facebook not Paying the Apple Tax? -&nbsp;></h3></li>
+            <li><h3>How to Think Different -&nbsp;></h3></li>
+            <li><span class="more">more...</span></li>
+        </ul>
+    <% } %>
+<% } else if(sortType == 'tags'){%>
+    <% for(const item of site.tags.data) { %>
+        <ul class="categoryBlocks">
+            <li><h2><a href="<%= url_for(item.path) %>"><%= item.slug %></a></h2></li>
+            <li><h3>Apple cuts 30% commission to 15% for small developers. -&nbsp;></h3></li>
+            <li><h3>Why is Facebook not Paying the Apple Tax? -&nbsp;></h3></li>
+            <li><h3>How to Think Different -&nbsp;></h3></li>
+            <li><span class="more">more...</span></li>
+        </ul>
+    <% } %>
+<% } else {%>
+    <h1>ERROR! WRONG sortType!</h1>
+<% } %>
+    
+</div>
