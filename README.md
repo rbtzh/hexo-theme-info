@@ -1,6 +1,6 @@
-# iA-Copy-🐱 Theme for HEXO
+# *info* Theme for HEXO
 
-A theme for hexo, a copy🐱 of iA.net, hoprfully. Written by zhao-robert with LOVE❤️~
+A theme for [hexo](https://hexo.io/), ~~a copy🐱 of iA.net, hopefully.~~  **INSPIRED** by [iA.net](https://ia.net). Written by [zhao-robert](https://github.com/zhao-robert/) with [LOVE❤️](https://en.wikipedia.org/wiki/Love)~
 
 ## Why this exists?
 
@@ -9,7 +9,7 @@ A theme for hexo, a copy🐱 of iA.net, hoprfully. Written by zhao-robert with L
 - And [iA's Website](https://ia.net) seems simple enough for me, who had never written something like this.
 - I need a theme for my [personal website](https://yanbo.site).
 
-- LOVE❤️
+- [LOVE❤️](https://en.wikipedia.org/wiki/Love)
 
 ## THE BASIC PLAN
 
@@ -28,8 +28,8 @@ A theme for hexo, a copy🐱 of iA.net, hoprfully. Written by zhao-robert with L
 - [ ] auto position the image base on scale
 - [ ] Responsive Design
 - [ ] Dark mode
-- [ ] Transition of a tags
-- [ ] Add Google Analytics  (Not sure.)
+- [ ] Transition of <a> tags
+- [ ] ~~Add Google Analytics  (Not sure.)~~
 - [ ] more......
 
 **I don't know whether this project has any Infringements of intellectual property rights or not, since I WILL KEEP THIS NON-COMMERCIAL. Thanks. Make issues if come with any trouble.**
