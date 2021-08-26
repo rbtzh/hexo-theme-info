@@ -13,16 +13,16 @@ A theme for [hexo](https://hexo.io/), ~~a copy🐱 of iA.net, hopefully.~~  **IN
 
 ## THE BASIC PLAN
 
-- [ ] Index
-- [ ] Blog list / Archives
+- [x] Index
+- [x] Blog list / Archives
 - [x] Blog page
-- [ ] Tags / Categories
+- [x] Tags / Categories
 - [ ] more......
 
 ## THE *more granularity*  PLAN
 
 - [ ] Learn GSAP (The one [iA's Website](https://ia.net) using) to add animation.
-- [ ] let header shows the current address
+- [x] let header shows the current address
 - [ ] find out how to add css file using relative path
 - [ ] I really need a design system
 - [ ] auto position the image base on scale
