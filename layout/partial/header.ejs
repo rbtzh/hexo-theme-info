@@ -86,35 +86,41 @@
     <div id="headerShow">
         <div id="headerPosContainer">
             <a href="/" class="headerPos" id="logo"><%= config.title %></a>
-            <% if(page.categories && page.categories.data.length) {%>
-                <span class="headerPos">/</span>
-                <% for(const item of page.categories.data) { %>
-                    <a 
-                      href="<%= url_for(item.path) %>" 
-                      class="post-meta-link headerPos">
-                      <%= item.name %>
-                    </a>
+            <% if (page.type == "post") { %>
+                <% if(page.categories && page.categories.data.length) {%>
+                    <span class="headerPos">/</span>
+                    <% for(const item of page.categories.data) { %>
+                        <a 
+                          href="<%= url_for(item.path) %>" 
+                          class="post-meta-link headerPos">
+                          <%= item.name %>
+                        </a>
+                    <% } %>
                 <% } %>
-            <% } %>
-            <% if (page.path.includes('categories/')) { %>
+                <% if(page.date) {%>
+                    <span class="headerPos">/</span>
+                    <time class="headerPos"><%= page.date.format(config.date_format)%></time>
+                <% } %>
+                <% if(page.author) {%>
+                    <span class="headerPos">/</span>
+                    <span class="headerPos">By <%= page.author %></span>
+                <% } %>
+            <% } else if (page.type == 'categories') {%>
                 <span class="headerPos">/</span>
-                <a class="headerPos" href="">category</a>
+                <span class="headerPos">Categories</span>
+            <% } else if (page.type == 'tags') {%>
+                <span class="headerPos">/</span>
+                <span class="headerPos">Tags</span>
+            <% } else if (page.type == 'category') { %>
+                <span class="headerPos">/</span>
+                <a class="headerPos" href="/categories">Category</a>
                 <span class="headerPos">/</span>
                 <span class="headerPos"><%- page.category %></span>
-            <% } %>
-            <% if (page.path.includes('tags/')) { %>
+            <% } else if (page.type == 'tag') { %>
                 <span class="headerPos">/</span>
-                <span class="headerPos">tag</span>
+                <a class="headerPos" href="/tags">Tag</a>
                 <span class="headerPos">/</span>
                 <span class="headerPos"><%- page.tag %></span>
-                <% } %>
-            <% if(page.date) {%>
-                <span class="headerPos">/</span>
-                <time class="headerPos"><%= page.date.format(config.date_format)%></time>
-            <% } %>
-            <% if(page.author) {%>
-                <span class="headerPos">/</span>
-                <span class="headerPos">By <%= page.author %></span>
             <% } %>
         </div>
         <button id="moreBtn"></button>
