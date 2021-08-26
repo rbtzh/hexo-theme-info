@@ -24,6 +24,7 @@
         }
         .navList li{
             padding-bottom: 10px;
+            text-align: left;
         }
 </style>
 <% if(topOrPage == 'top') { %>
@@ -31,14 +32,17 @@
 <% } else { %>
 <nav class="siteNav siteNavPage">
 <% } %>
+
     <ul class="navList">
-        <li><b><a href="">Categories</a></b></li>
-        <li><a href="">category1</a></li>
-        <li><a href="">category2</a></li>
-        <li><a href="">more...</a></li>
+        <li><b><a href="/categories">Categories</a></b></li>
+        <% for( let i = 0; i < (theme.nav.limit_item_lines - 1); i++ ) { %>
+            <li><a href="<%= url_for(site.categories.data[i].path) %>"><%= site.categories.data[i].slug %></a></li>
+        <% } %>
+        <li><a href="/categories">more...</a></li>
     </ul>
+        
     <ul class="navList">
-        <li><b><a href="">Subscribe</a></b></li>
+        <li><b><a href="javascript:;">Subscribe</a></b></li>
         <li><a href="">Github</a></li>
         <li><a href="">Twitter</a></li>
         <li><a href="">RSS</a></li>
@@ -49,22 +53,19 @@
         <li><a href="">Blog</a></li>
         <li><a href="">About Us</a></li>
     </ul>
-    <ul class="navList">
-        <li><b><a href="">Category1</a></b></li>
-        <li><a href="http://localhost:4000/2021/08/22/test/">MD TEST</a></li>
-        <li><a href="http://localhost:4000">Index</a></li>
-        <li><a href="">more...</a></li>
-    </ul>
-    <ul class="navList">
-        <li><b><a href="">Category2</a></b></li>
-        <li><a href="">Article1</a></li>
-        <li><a href="">Article2</a></li>
-        <li><a href="">more...</a></li>
-    </ul>
-    <ul class="navList">
-        <li><b><a href="">Category3</a></b></li>
-        <li><a href="">Article1</a></li>
-        <li><a href="">Article2</a></li>
-        <li><a href="">more...</a></li>
-    </ul>
+    <% for( let i = 0; i < 3; i++ ) { %>
+        <ul class="navList">
+            <li><b><a href="<%= url_for(site.categories.data[i].path) %>"><%= site.categories.data[i].slug %></a></b></li>
+
+                
+                    <% for( let ii = 0; ii < (theme.nav.limit_item_lines - 1); ii++ ) { %>
+                        <% if (site.categories.data[i].posts.data[ii]) { %>
+                            <li><a href="<%= url_for(site.categories.data[i].posts.data[ii].path) %>"><%= site.categories.data[i].posts.data[ii].title %></a></li>
+                        <% } %>
+                    <% } %>
+
+
+            <li><a href="<%= url_for(site.categories.data[i].path) %>">more...</a></li>
+        </ul>
+    <% } %>
 </nav>

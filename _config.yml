@@ -4,3 +4,7 @@ list:
     limit_generated_sentence_excerpt: 3
 sort:
     limit_generate_title: 3
+nav:
+    limit_item_lines: 3
+about:
+    socialNetwork:
