@@ -8,3 +8,5 @@ nav:
     limit_item_lines: 3
 about:
     socialNetwork:
+        github: 'https://github.com/zhao-robert'
+        twitter: 'https://twitter.com/yan_mind'

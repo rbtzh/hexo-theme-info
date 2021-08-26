@@ -17,10 +17,12 @@ A theme for [hexo](https://hexo.io/), ~~a copy🐱 of iA.net, hopefully.~~  **IN
 - [x] Blog list / Archives
 - [x] Blog page
 - [x] Tags / Categories
+- [ ] About
 - [ ] more......
 
 ## THE *more granularity*  PLAN
 
+- [ ] Multi-language support
 - [ ] Learn GSAP (The one [iA's Website](https://ia.net) using) to add animation.
 - [x] let header shows the current address
 - [ ] find out how to add css file using relative path

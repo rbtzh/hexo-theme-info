@@ -4,7 +4,7 @@
     .siteNav{
             display: grid;
             overflow:hidden;
-            margin-top: 20px;
+            margin-top: 50px;
             grid-template-columns:repeat(3,1fr);
             grid-gap: 3.5rem 2rem;
             font-size: 25px;
@@ -43,9 +43,9 @@
         
     <ul class="navList">
         <li><b><a href="javascript:;">Subscribe</a></b></li>
-        <li><a href="">Github</a></li>
-        <li><a href="">Twitter</a></li>
-        <li><a href="">RSS</a></li>
+        <li><a href="<%= theme.about.socialNetwork.github %>">Github</a></li>
+        <li><a href="<%= theme.about.socialNetwork.twitter %>">Twitter</a></li>
+        <li><a href="javascript:;">RSS</a></li>
     </ul>
     <ul class="navList">
         <li><b><a href="">Address</a></b></li>
