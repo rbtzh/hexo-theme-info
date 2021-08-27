@@ -14,8 +14,8 @@
             width: 70vw;
             margin: 0 auto;
             background-color: #FAFAFA;
-            font-family: 'Google Sans', 'Source Han Sans SC', sans-serif;
-            font-weight: 300;
+            font-family: 'Inter', 'Source Han Sans SC', sans-serif;
+            font-weight: 500;
             font-size:26px;
 
         }
@@ -26,6 +26,7 @@
         }
         a:hover{          
             color: #d7bcff; 
+            border-color: #d7bcff;
         }
         b{
             font-weight:700;
@@ -46,13 +47,6 @@
     </style>
 </head>
 <body>
-    <%# DEBUG %> 
-    <% console.log('\n\n------page.type------\n\n') %>
-    <% console.log(page.type) %>
-    <% console.log('\n\n------page.posts------\n\n') %>
-    <% if (page.posts) { %>
-        <% console.log(page.posts) %>
-    <% } %>
     <%- partial('partial/header')%>
     <%- body %>
     <%- partial('partial/footer')%>

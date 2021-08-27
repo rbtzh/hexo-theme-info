@@ -8,7 +8,6 @@
     justify-content: space-between;
     box-sizing: border-box;
     font-size: 24px;
-    font-weight: 400;
     line-height: 1.5em;
     margin-bottom: 35px;
 }
@@ -38,7 +37,40 @@
 .list-excerpt p{
     margin:0;
 }
+
+div.pageIndecatorContainer{
+    display: flex;
+    justify-content: center;
+    font-weight:700;
+    color: #000000;
+}
+
+div.pageIndecatorNumber{
+    text-align:center;
+    border:solid #000000 5px;
+    padding-left:2em;
+    padding-right: 2em;
+    float:left;
+}
+
+div.pageIndecatorContainer button{
+    display:block;
+    font-size:1em;
+    background-color: #ffffff00;
+    border:none;
+    margin-left:1em;
+    margin-right:1em;
+    visibility: hidden;
+}
+
+div.pageIndecatorContainer button.indeBtnLeft{
+    visibility: hidden;
+}
+
 </style>
+
+<% let pagein = 0; %>
+<% let perPage = theme.list.list_per_page %>
 
 <div class="articleList"></div>
 <% if (listType === 'posts') { %>
@@ -108,4 +140,13 @@
     <% }); %>
 
 <% } %>
+    <div class="pageIndecatorContainer">
+        <button class="indeBtnLeft"><</button>
+        <div class="pageIndecatorNumber"><%= pagein + 1 %></div>
+        <button class="indeBtnRight">></button>
+    </div>
 </div>
+
+<script>
+
+</script>

@@ -8,7 +8,6 @@
     justify-content: space-between;
     box-sizing: border-box;
     font-size: 24px;
-    font-weight: 400;
     line-height: 1.5em;
     margin-bottom: 35px;
 }
@@ -38,42 +37,97 @@
 .list-excerpt p{
     margin:0;
 }
+div.seeAllContainer{
+    display: flex;
+    justify-content: center;
+    font-weight:700;
+    color: #000000;
+}
+a.seeAll{
+    text-align:center;
+    border:solid #000000 5px;
+    padding-left:2em;
+    padding-right: 2em;
+    float:left;
+    padding: .5em 2em .5em 2em;
+}
 </style>
 
 <div class="articleList"></div>
-<% if (listType === 'posts') { %>
- 
-    <% site.posts.each(function (post) { %>
-        <div class="list-entrance">
-            <div class="list-title-date">
-                <a href="<%=config.root + post.path%>"><h2><%=post.title%></h2></a>
-                <% if (post.date) { %>
-                    <time><%- post.date.format(config.date_format) %></time>
-                <% } %>
-                <% if (post.author) { %>
-                    <address class="author">By <%= post.author %></address>
-                <% } %>
-                
-            </div>
-            <div class="list-excerpt">
-                <a href="<%=config.root + post.path%>">
-                    <p> 
-                        <%if(post.excerpt) {%>
-                                <%- strip_html(post.excerpt) %>
-                            <%}else{%>
-                                <% if (theme.list.limit_generated_excerpt) { %>
-                                    <%- strip_html(post.content.substring(post.content.indexOf('<p>')+3, post.content.indexOf('</p>'))).split(/[。.]+/, theme.list.limit_generated_sentence_excerpt) %>
-                                <% } else {%>
-                                <%- strip_html(post.content.substring(post.content.indexOf('<p>')+3, post.content.indexOf('</p>'))) %>
-                                <% } %>
-                            <%}%>
-                        <span class="little-arrow">→</span>
-                    </p>
-                </a>
-            </div>
-        </div>
-    <% }); %>
 
+<!-- <h1>'DEBUG' limitDisplay = <%= limitDisplay %></h1>
+<h1>'DEBUG' theme.list.index_max_posts = <%= theme.list.index_max_posts %></h1>
+<h1>'DEBUG' listType = <%= listType %></h1> -->
+
+<% if (listType === 'posts') { %>
+    <% if(limitDisplay){ %>
+        <% for( let i = 0; i < (theme.list.index_max_posts > site.posts.length?site.posts.length:theme.list.index_max_posts); i++ ) { %>
+
+                <% let post = site.posts.data[i] %>
+                <div class="list-entrance">
+                    <div class="list-title-date">
+                        <a href="<%=config.root + post.path%>"><h2><%=post.title%></h2></a>
+                        <% if (post.date) { %>
+                            <time><%- post.date.format(config.date_format) %></time>
+                        <% } %>
+                        <% if (post.author) { %>
+                            <address class="author">By <%= post.author %></address>
+                        <% } %>
+                        
+                    </div>
+                    <div class="list-excerpt">
+                        <a href="<%=config.root + post.path%>">
+                            <p> 
+                                <%if(post.excerpt) {%>
+                                    <%- strip_html(post.excerpt) %>
+                                <%}else{%>
+                                    <% if (theme.list.limit_generated_excerpt) { %>
+                                        <%- strip_html(post.content.substring(post.content.indexOf('<p>')+3, post.content.indexOf('</p>'))).split(/[。.]+/, theme.list.limit_generated_sentence_excerpt) %>
+                                    <% } else {%>
+                                        <%- strip_html(post.content.substring(post.content.indexOf('<p>')+3, post.content.indexOf('</p>'))) %>
+                                    <% } %>
+                                <%}%>
+                                <span class="little-arrow">→</span>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+        <% } %>
+        <div class="seeAllContainer">
+            <a class="seeAll" href="/posts">See All <span class="little-arrow">→</span></a>
+        </div>
+    <% } else {%>
+        <% site.posts.each(function (post) { %>
+            <div class="list-entrance">
+                <div class="list-title-date">
+                    <a href="<%=config.root + post.path%>"><h2><%=post.title%></h2></a>
+                    <% if (post.date) { %>
+                        <time><%- post.date.format(config.date_format) %></time>
+                    <% } %>
+                    <% if (post.author) { %>
+                        <address class="author">By <%= post.author %></address>
+                    <% } %>
+                    
+                </div>
+                <div class="list-excerpt">
+                    <a href="<%=config.root + post.path%>">
+                        <p> 
+                            <%if(post.excerpt) {%>
+                                    <%- strip_html(post.excerpt) %>
+                                <%}else{%>
+                                    <% if (theme.list.limit_generated_excerpt) { %>
+                                        <%- strip_html(post.content.substring(post.content.indexOf('<p>')+3, post.content.indexOf('</p>'))).split(/[。.]+/, theme.list.limit_generated_sentence_excerpt) %>
+                                    <% } else {%>
+                                    <%- strip_html(post.content.substring(post.content.indexOf('<p>')+3, post.content.indexOf('</p>'))) %>
+                                    <% } %>
+                                <%}%>
+                            <span class="little-arrow">→</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+        <% }); %>
+    <% } %>
 <% } else {%>
     
     <% page.posts.each(function (post) { %>

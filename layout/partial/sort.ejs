@@ -92,7 +92,7 @@
             <li><h2><a href="<%= url_for(item.path) %>"><%= item.slug %></a></h2></li>
             <% for( let i = 0; i < theme.sort.limit_generate_title; i++ ) { %>
                 <% if (item.posts.data[i]) { %>
-                    <li><h3><a href="<%= config.root + item.posts.data[i].path %>"><%= item.posts.data[i].title %> -&nbsp;></a></h3></li>
+                    <li><h3><a href="<%= config.root + item.posts.data[i].path %>"><%= item.posts.data[i].title %> <span class="little-arrow">→</span></a></h3></li>
                 <% } %>
             <% } %>
             <li><a class="more" href="<%= url_for(item.path) %>">more...</a></li>
@@ -104,7 +104,7 @@
             <li><h2><a href="<%= url_for(item.path) %>"><%= item.slug %></a></h2></li>
             <% for( let i = 0; i < theme.sort.limit_generate_title; i++ ) { %>
                 <% if (item.posts.data[i]) { %>
-                    <li><h3><a href="<%= config.root + item.posts.data[i].path %>"><%= item.posts.data[i].title %> -&nbsp;></a></h3></li>
+                    <li><h3><a href="<%= config.root + item.posts.data[i].path %>"><%= item.posts.data[i].title %> <span class="little-arrow">→</span></a></h3></li>
                 <% } %>
             <% } %>
             <li><a class="more" href="<%= url_for(item.path)%>">more...</a></li>

@@ -2,6 +2,8 @@ list:
     limit_generated_excerpt: false
     limit_generated_char_excerpt: 360
     limit_generated_sentence_excerpt: 3
+    list_per_page: 3
+    index_max_posts: 3
 sort:
     limit_generate_title: 3
 nav:
@@ -9,4 +11,4 @@ nav:
 about:
     socialNetwork:
         github: 'https://github.com/zhao-robert'
-        twitter: 'https://twitter.com/yan_mind'
+        twitter: 'https://twitter.com/yan_mind'   

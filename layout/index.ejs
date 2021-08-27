@@ -10,5 +10,7 @@
     <article>
         <p><b>We architect information. </b>Founded in 2005, iA designs information systems for clients like Wikipedia, NHK and Condé Nast. Our product team makes the best writing app ever.</p>
     </article>
-    <%- partial('partial/list', {listType:'allBlogs'})%>
+    <%- partial('partial/list', {
+        listType:'posts', limitDisplay:true
+    })%>
 </main>
