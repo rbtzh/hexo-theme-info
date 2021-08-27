@@ -49,9 +49,9 @@
     <%# DEBUG %> 
     <% console.log('\n\n------page.type------\n\n') %>
     <% console.log(page.type) %>
-    <% console.log('\n\n------site.categories.data[0].posts.data[1].title------\n\n') %>
-    <% if (site.categories.data[0].posts.data[1]) { %>
-        <% console.log(site.categories.data[0].posts.data[1].title) %>
+    <% console.log('\n\n------page.posts------\n\n') %>
+    <% if (page.posts) { %>
+        <% console.log(page.posts) %>
     <% } %>
     <%- partial('partial/header')%>
     <%- body %>
