@@ -11,4 +11,9 @@ nav:
 about:
     socialNetwork:
         github: 'https://github.com/zhao-robert'
-        twitter: 'https://twitter.com/yan_mind'   
+        twitter: 'https://twitter.com/yan_mind' 
+    avatar: https://avatars.githubusercontent.com/u/52877222?v=4 
+colors: 
+    selected_text_backgroundColor: #F0F8FF 
+    selected_text_color: #262626 
+    

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="<%= theme.about.avatar %>">
     <% if(page.path == 'index.html') {%>
     <title><%= config.title %></title>
     <% } else { %>
@@ -43,6 +44,35 @@
         }
         h1.pageName{
             font-size: 64px;
+        }
+
+        /* ::selection {
+            background-color: <%= theme.colors.selected_text_backgroundColor %>; 
+            color: <%= theme.colors.selected_text_color %>;
+        }
+
+        ::-moz-selection {
+            background-color: <%= theme.colors.selected_text_backgroundColor %>; 
+            color:<%= theme.colors.selected_text_color %>;
+        }
+
+        ::-webkit-selection {
+            background-color: <%= theme.colors.selected_text_backgroundColor %>; 
+            color:<%= theme.colors.selected_text_color %>;
+        } */
+        ::selection {
+            background:#ffe150; 
+            color:#555;
+        }
+
+        ::-moz-selection {
+            background:#ffe150; 
+            color:#555;
+        }
+
+        ::-webkit-selection {
+            background:#ffe150; 
+            color:#555;
         }
     </style>
 </head>
