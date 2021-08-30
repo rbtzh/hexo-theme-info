@@ -36,7 +36,9 @@
     <ul class="navList">
         <li><b><a href="/categories">Categories</a></b></li>
         <% for( let i = 0; i < (theme.nav.limit_item_lines - 1); i++ ) { %>
-            <li><a href="<%= url_for(site.categories.data[i].path) %>"><%= site.categories.data[i].slug %></a></li>
+            <% if (site.categories.data[i]) { %>
+                <li><a href="<%= url_for(site.categories.data[i].path) %>"><%= site.categories.data[i].slug %></a></li>
+            <% } %>
         <% } %>
         <li><a href="/categories">more...</a></li>
     </ul>
@@ -55,17 +57,18 @@
     </ul>
     <% for( let i = 0; i < 3; i++ ) { %>
         <ul class="navList">
-            <li><b><a href="<%= url_for(site.categories.data[i].path) %>"><%= site.categories.data[i].slug %></a></b></li>
-
-                
+            <% if (site.categories.data[i]) { %>
+                <li><b><a href="<%= url_for(site.categories.data[i].path) %>"><%= site.categories.data[i].slug %></a></b></li>
+            
                     <% for( let ii = 0; ii < (theme.nav.limit_item_lines - 1); ii++ ) { %>
                         <% if (site.categories.data[i].posts.data[ii]) { %>
                             <li><a href="<%= url_for(site.categories.data[i].posts.data[ii].path) %>"><%= site.categories.data[i].posts.data[ii].title %></a></li>
                         <% } %>
                     <% } %>
-
-
-            <li><a href="<%= url_for(site.categories.data[i].path) %>">more...</a></li>
+                    <li><a href="<%= url_for(site.categories.data[i].path) %>">more...</a></li>
+                    
+            <% } %>
+            
         </ul>
     <% } %>
 </nav>
