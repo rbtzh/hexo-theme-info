@@ -1,0 +1,12 @@
+article h1{
+    font-size:38px;
+    font-weight:700;
+}
+div.headImageContainer{
+    width:100%;
+    max-height:500px;
+    overflow:hidden;
+}
+img.headImage{
+    width:100%;
+}

@@ -1,46 +1,10 @@
-#headerShow {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#headerPosContainer {
-    display: block;
-
-}
-
-.headerPos {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-#moreBtn {
-    display: block;
-    height: 30px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0);
-    width: 30px;
-    background-image: url(../source/img/menu_black_24dp.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#logo {
-    font-weight: 700;
-    color: #000;
-}
-
-#logo:hover {
-    color: tomato
-}
 .siteNav{
     display: grid;
     overflow:hidden;
-    margin-top: 20px;
+    margin-top: 50px;
     grid-template-columns:repeat(3,1fr);
     grid-gap: 3.5rem 2rem;
-    font-size: 25px;
-    font-weight: 300;
+    font-weight: 500;
 }
 .siteNav.siteNavTop{
     height:0px;
@@ -56,4 +20,5 @@
 }
 .navList li{
     padding-bottom: 10px;
+    text-align: left;
 }

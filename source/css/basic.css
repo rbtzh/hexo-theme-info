@@ -1,19 +1,23 @@
 body {
-    width: 70vw;
+    width: 50vw;
+    max-width: 640px;
     margin: 0 auto;
     background-color: #FAFAFA;
-    font-family: 'Google Sans', 'Source Han Sans SC', sans-serif;
-    font-weight: 300;
-    font-size:28px;
+    font-family: 'Inter', 'Source Han Sans SC', sans-serif;
+    font-weight: 500;
+    font-size:16px;
 
 }
-
+main{
+    margin: 0 auto;
+}
 a{
     text-decoration: none;
     color: #000;
 }
 a:hover{          
     color: #d7bcff; 
+    border-color: #d7bcff;
 }
 b{
     font-weight:700;
@@ -30,4 +34,33 @@ article {
 }
 h1.pageName{
     font-size: 64px;
+}
+
+/* ::selection {
+    background-color: <%= theme.colors.selected_text_backgroundColor %>; 
+    color: <%= theme.colors.selected_text_color %>;
+}
+
+::-moz-selection {
+    background-color: <%= theme.colors.selected_text_backgroundColor %>; 
+    color:<%= theme.colors.selected_text_color %>;
+}
+
+::-webkit-selection {
+    background-color: <%= theme.colors.selected_text_backgroundColor %>; 
+    color:<%= theme.colors.selected_text_color %>;
+} */
+::selection {
+    background:#ffe150; 
+    color:#555;
+}
+
+::-moz-selection {
+    background:#ffe150; 
+    color:#555;
+}
+
+::-webkit-selection {
+    background:#ffe150; 
+    color:#555;
 }

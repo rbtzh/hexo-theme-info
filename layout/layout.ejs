@@ -10,76 +10,13 @@
     <% } else { %>
     <title><%=page.title + ' - ' + config.title%></title>
     <% } %>
-    <style>
-        body {
-            width: 70vw;
-            margin: 0 auto;
-            background-color: #FAFAFA;
-            font-family: 'Inter', 'Source Han Sans SC', sans-serif;
-            font-weight: 500;
-            font-size:18px;
-
-        }
-
-        a{
-            text-decoration: none;
-            color: #000;
-        }
-        a:hover{          
-            color: #d7bcff; 
-            border-color: #d7bcff;
-        }
-        b{
-            font-weight:700;
-        }
-        header {
-            display: block;
-            font-size: 25px;  
-            padding-top: 8vw;  
-        }
-        article {
-            display: block;
-            margin-top: 50px;
-            line-height: 1.5em;
-        }
-        h1.pageName{
-            font-size: 64px;
-        }
-
-        /* ::selection {
-            background-color: <%= theme.colors.selected_text_backgroundColor %>; 
-            color: <%= theme.colors.selected_text_color %>;
-        }
-
-        ::-moz-selection {
-            background-color: <%= theme.colors.selected_text_backgroundColor %>; 
-            color:<%= theme.colors.selected_text_color %>;
-        }
-
-        ::-webkit-selection {
-            background-color: <%= theme.colors.selected_text_backgroundColor %>; 
-            color:<%= theme.colors.selected_text_color %>;
-        } */
-        ::selection {
-            background:#ffe150; 
-            color:#555;
-        }
-
-        ::-moz-selection {
-            background:#ffe150; 
-            color:#555;
-        }
-
-        ::-webkit-selection {
-            background:#ffe150; 
-            color:#555;
-        }
-    </style>
+    <%- css('css/basic.css') %>
 </head>
 <body>
     <%- partial('partial/header')%>
     <%- body %>
     <%- partial('partial/footer')%>
+    
     <% console.log('------site.posts.data[0].path------') %>
     <% console.log(site.posts.data[0].path) %>
     <% console.log('------site.posts.data[0].permalink------') %>

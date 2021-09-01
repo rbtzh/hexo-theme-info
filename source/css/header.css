@@ -1,0 +1,36 @@
+#headerShow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headerPosContainer {
+    display: block;
+
+}
+
+.headerPos {
+    display: inline-block;
+    margin-right: 10px;
+    cursor:default;
+}
+
+#moreBtn {
+    display: block;
+    height: 30px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    width: 30px;
+    background-image: url(https://pic.stackoverflow.wiki/uploadImages/111/27/28/197/2021/08/22/17/22/e504eeea-9516-45a2-8fca-e2548697bdd6.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#logo {
+    font-weight: 700;
+    color: #000;
+}
+
+#logo:hover {
+    color: tomato
+}

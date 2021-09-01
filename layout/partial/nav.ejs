@@ -1,32 +1,8 @@
 <%# use topOrPage to designate whether needs to show or not %> 
 <%# 'top' means hide by default, other means show by default %> 
-<style>
-    .siteNav{
-            display: grid;
-            overflow:hidden;
-            margin-top: 50px;
-            grid-template-columns:repeat(3,1fr);
-            grid-gap: 3.5rem 2rem;
-            font-size: 25px;
-            font-weight: 500;
-        }
-        .siteNav.siteNavTop{
-            height:0px;
-            opacity: 0;
-        }
-        .siteNav.siteNavinPage{
-            margin-top:100px;
-        }
-        .navList{
-            list-style-type: none;
-            margin: 0;
-            padding: 0;    
-        }
-        .navList li{
-            padding-bottom: 10px;
-            text-align: left;
-        }
-</style>
+
+<%- css('css/nav.css') %>
+
 <% if(topOrPage == 'top') { %>
 <nav class="siteNav siteNavTop">
 <% } else { %>

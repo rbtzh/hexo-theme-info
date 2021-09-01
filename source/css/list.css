@@ -6,22 +6,24 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     box-sizing: border-box;
-    font-size: 24px;
-    font-weight: 400;
     line-height: 1.5em;
     margin-bottom: 35px;
 }
 .list-title-date{
-    flex-basis: 33.33333333%;
-    max-width: 33.33333333%;
+    flex-basis: 30%;
+    max-width: 30%;
 }
 .list-title-date h2{
-    font-size:24px;
+    font-size:18px;
     font-weight:700;
     line-height:1.5em;
     margin:0;
 }
 .list-title-date time{
+    display:block;
+    margin-top:10px;
+}
+.list-title-date address.author{
     display:block;
     margin-top:10px;
 }
@@ -32,4 +34,18 @@
 }
 .list-excerpt p{
     margin:0;
+}
+div.seeAllContainer{
+    display: flex;
+    justify-content: center;
+    font-weight:700;
+    color: #000000;
+}
+a.seeAll{
+    text-align:center;
+    border:solid #000000 5px;
+    padding-left:2em;
+    padding-right: 2em;
+    float:left;
+    padding: .5em 2em .5em 2em;
 }
