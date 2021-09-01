@@ -1,8 +1,6 @@
 .categoryBlocksContainer{
-    font-family: inter;
     display:flex;
-    flex-flow:row wrap;
-    justify-content: space-between;
+    flex-flow:column nowrap;
     width:100%;
     padding:0;
     margin:0;
@@ -10,14 +8,15 @@
 }
 .categoryBlocksContainer ul.categoryBlocks{
     display:block;
-    width:45%;
+    width:100%;
     margin:0;
     padding:0;
     list-style-type: none;
-    margin-bottom: 104px;
+    margin-bottom: 6rem;
 }
 .categoryBlocksContainer ul.categoryBlocks li{
     padding:0;
+    width:100%;
 }
 .categoryBlocksContainer ul.categoryBlocks h2{
     font-size:2.5rem;
@@ -39,30 +38,15 @@
     padding:0;
     margin:0;
 }
-.categoryBlocksContainer{
-    font-family: inter;
-    display:flex;
-    flex-flow:row wrap;
-    justify-content: space-between;
-    width:100%;
-    padding:0;
-    margin:0;
-    margin-top:78px;
-}
-.categoryBlocksContainer ul.categoryBlocks{
-    display:block;
-    width:45%;
-    margin:0;
-    padding:0;
-    list-style-type: none;
-    margin-bottom: 104px;
-}
 
 /* mobile layout, three column nav */
-@media all and (min-width:520px) {}
-/* change the width of main */
-@media all and (min-width:680px) {}
-/* change the padding of header and gaps between containers. */
-@media all and (min-width:767px) {}
-/* laptop layout */
-@media all and (min-width:1024px) {}
+@media all and (min-width:550px) {
+    .categoryBlocksContainer{
+        flex-flow:row wrap;
+        justify-content: space-between;
+    }
+    .categoryBlocksContainer ul.categoryBlocks{
+        width:45%;
+        margin-bottom: 8rem;
+    }
+}
