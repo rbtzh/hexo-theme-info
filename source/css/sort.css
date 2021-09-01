@@ -57,3 +57,12 @@
     list-style-type: none;
     margin-bottom: 104px;
 }
+
+/* mobile layout, three column nav */
+@media all and (min-width:520px) {}
+/* change the width of main */
+@media all and (min-width:680px) {}
+/* change the padding of header and gaps between containers. */
+@media all and (min-width:767px) {}
+/* laptop layout */
+@media all and (min-width:1024px) {}
