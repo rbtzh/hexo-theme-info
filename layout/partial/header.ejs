@@ -15,7 +15,16 @@
     window.addEventListener('load', () => {
     let headerBtn = document.querySelector('#moreBtn');
     let siteNav = document.querySelector('.siteNav');
-    let navFullHeight = 390; //Because the navbar's display is none, and I haven't found a way to get it's height, I will hard code this.Will Change later.
+    let navFullHeightThree = 390; //Because the navbar's display is none, and I haven't found a way to get it's height, I will hard code this.Will Change later.
+    let navFullHeightTwo = 478;
+    let breakpointWindth = 520
+
+    if(window.innerWidth >= breakpointWindth){
+        var navFullHeight = navFullHeightThree;
+    }else{
+        var navFullHeight = navFullHeightTwo;
+    }
+
     let animateFold = true; //true => the next animation should unfold the nav bar
 
     headerBtn.addEventListener('click', function () {
