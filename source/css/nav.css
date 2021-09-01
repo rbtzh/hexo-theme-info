@@ -2,7 +2,7 @@
     display: grid;
     overflow:hidden;
     margin-top: 50px;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(2,1fr);
     grid-gap: 3.5rem 2rem;
     font-weight: 500;
 }
@@ -24,10 +24,8 @@
 }
 
 /* mobile layout, three column nav */
-@media all and (min-width:520px) {}
-/* change the width of main */
-@media all and (min-width:680px) {}
-/* change the padding of header and gaps between containers. */
-@media all and (min-width:767px) {}
-/* laptop layout */
-@media all and (min-width:1024px) {}
+@media all and (min-width:520px) {
+    .siteNav{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
