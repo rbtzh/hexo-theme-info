@@ -20,21 +20,21 @@
     padding:0;
 }
 .categoryBlocksContainer ul.categoryBlocks h2{
-    font-size:36px;
+    font-size:2.5rem;
     font-weight:900;
     padding:0;
     margin:0;
-    margin-bottom: 54px;
+    margin-bottom: 1em;
 }
 .categoryBlocksContainer ul.categoryBlocks h3{
-    font-size:33px;
+    font-size:2.5rem;
     font-weight:500;
     padding:0;
     margin:0;
-    margin-bottom: 26px;
+    margin-bottom: .5em;
 }
-.categoryBlocksContainer ul.categoryBlocks span.more{
-    font-size:33px;
+.categoryBlocksContainer ul.categoryBlocks .more{
+    font-size:2.5rem;
     font-weight:500;
     padding:0;
     margin:0;
@@ -56,27 +56,4 @@
     padding:0;
     list-style-type: none;
     margin-bottom: 104px;
-}
-.categoryBlocksContainer ul.categoryBlocks li{
-    padding:0;
-}
-.categoryBlocksContainer ul.categoryBlocks h2{
-    font-size:36px;
-    font-weight:900;
-    padding:0;
-    margin:0;
-    margin-bottom: 54px;
-}
-.categoryBlocksContainer ul.categoryBlocks h3{
-    font-size:33px;
-    font-weight:500;
-    padding:0;
-    margin:0;
-    margin-bottom: 26px;
-}
-.categoryBlocksContainer ul.categoryBlocks .more{
-    font-size:33px;
-    font-weight:500;
-    padding:0;
-    margin:0;
 }

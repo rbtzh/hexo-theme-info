@@ -1,17 +1,17 @@
 article h2{
-    font-size: 30px;
+    font-size: 2.5rem;
 }
 article h3{
-    font-size: 28px;
+    font-size: 2.4rem;
 }
 article h4{
-    font-size: 26px;
+    font-size: 2.5rem;
 }
 article h5{
-    font-size: 25px;
+    font-size: 2.2rem;
 }
 article h6{
-    font-size: 24px;
+    font-size: 2rem;
 }
 article img{
     max-width:100%;
@@ -31,12 +31,14 @@ figure.highlight{
     padding:10px;
     overflow: auto;
     border-radius: 5px;
-    margin:24px 60px 24px 60px;
+    margin:24px 0 24px 0;
 }
 figure.highlight pre{
     margin:10px 0 10px 0;
-    font-family:'Cascadia Code', monospace;
+    font-family:'Cascadia Code', monospace, sans-serif;
     font-weight: 400;
+    font-size:1.5rem;
+    line-height:1.5em;
 }
 figure.highlight td.gutter{
     width:2rem;

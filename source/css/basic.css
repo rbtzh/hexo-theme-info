@@ -1,11 +1,15 @@
+html{
+    font-size:12px;
+}
 body {
     width: 60vw;
     max-width: 1024px;
+    min-width: 640px;
     margin: 0 auto;
     background-color: #FAFAFA;
     font-family: 'Inter', 'Source Han Sans SC', sans-serif;
     font-weight: 500;
-    font-size:24px;
+    font-size:2rem;
 
 }
 main{
@@ -24,7 +28,7 @@ b{
 }
 header {
     display: block;
-    font-size: 25px;  
+    font-size: 2rem;  
     padding-top: 8vw;  
 }
 article {
@@ -33,7 +37,7 @@ article {
     line-height: 1.5em;
 }
 h1.pageName{
-    font-size: 64px;
+    font-size: 6rem;
 }
 
 /* ::selection {
