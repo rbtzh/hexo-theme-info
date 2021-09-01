@@ -23,10 +23,9 @@ article blockquote{
     background-color: #F0F8FF;
     border-radius: 5px;
     padding:2em;
-    border-left: solid #CFCECE .5em;
 }
 figure.highlight{
-    background-color: rgb(231, 231, 231);
+    background-color: #F4F4F4;
     line-height:1.5rem;
     padding:10px;
     overflow: auto;
@@ -42,7 +41,7 @@ figure.highlight pre{
 }
 figure.highlight td.gutter{
     width:2rem;
-    background-color: rgb(207, 206, 206);
+    background-color: #e1e1e1;
     border-radius: 5px;
     padding-left: 0.5rem;
     padding-right:0.5rem;
@@ -60,11 +59,32 @@ div.endDivider{
     width: 5em;
     font-weight:700;
 }
-/* mobile layout, three column nav */
-@media all and (min-width:520px) {}
-/* change the width of main */
-@media all and (min-width:680px) {}
-/* change the padding of header and gaps between containers. */
-@media all and (min-width:767px) {}
-/* laptop layout */
-@media all and (min-width:1024px) {}
+article > table{
+    display:block;
+    table-layout: fixed;
+    border-collapse: collapse;
+    width:100%;
+    overflow: auto;
+    font-size:1.5rem;
+    
+}
+article > table tbody{
+    border-radius: 5px;
+}
+article > table thead th{
+    word-break: keep-all;
+    padding:0.4em;
+    text-align:left;
+    background-color: #F4F4F4;
+    min-width: 10em;
+}
+article > table tbody td{
+    padding:0.4em;
+}
+article > table tbody tr:nth-child(odd) {
+    background-color: #e1e1e1;
+  }
+
+article > table tbody tr:nth-child(even) {
+    background-color: #F4F4F4;
+}

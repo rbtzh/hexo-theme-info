@@ -17,6 +17,7 @@
 .categoryBlocksContainer ul.categoryBlocks li{
     padding:0;
     width:100%;
+    word-break:break-all;
 }
 .categoryBlocksContainer ul.categoryBlocks h2{
     font-size:2.5rem;

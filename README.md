@@ -33,6 +33,7 @@ A theme for [hexo](https://hexo.io/), ~~a copy🐱 of iA.net, hopefully.~~  **IN
 - [ ] Responsive Design
 - [ ] Dark mode
 - [ ] Transition of <a> tags
+- [ ] switch to tailwindcss
 - [ ] ~~Add Google Analytics  (Not sure.)~~
 - [ ] more......
 

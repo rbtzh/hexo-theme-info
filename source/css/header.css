@@ -1,12 +1,14 @@
 #headerShow {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 }
 
 #headerPosContainer {
     display: block;
-
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
 }
 
 .headerPos {
