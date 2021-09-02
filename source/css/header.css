@@ -7,14 +7,14 @@
 #headerPosContainer {
     display: block;
     overflow: hidden;
-    white-space:nowrap;
-    text-overflow:ellipsis;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .headerPos {
     display: inline-block;
     margin-right: 10px;
-    cursor:default;
+    cursor: default;
 }
 
 #moreBtn {

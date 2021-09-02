@@ -1,46 +1,52 @@
-html{
+html {
     /* need change font-size to a lower value to fit the mobile layout */
-    font-size:10px;
+    font-size: 10px;
 }
+
 body {
     width: 90vw;
     margin: 0 auto;
     background-color: #FAFAFA;
     font-family: 'Inter', 'Source Han Sans SC', sans-serif;
     font-weight: 500;
-    font-size:2rem;
+    font-size: 2rem;
     box-sizing: border-box;
     hyphens: auto;
 }
-h1.pageName{
+
+h1.pageName {
     font-size: 6rem;
 }
-main{
+
+main {
     margin: 0 auto;
 }
 
 header {
     display: block;
-    font-size: 2rem;  
+    font-size: 2rem;
     margin-top: 60px;
-    margin-bottom: 60px;  
+    margin-bottom: 60px;
 }
+
 article {
     display: block;
     margin-top: 50px;
     line-height: 1.5em;
 }
 
-a{
+a {
     text-decoration: none;
     color: #000;
 }
-a:hover{          
-    color: #d7bcff; 
+
+a:hover {
+    color: #d7bcff;
     border-color: #d7bcff;
 }
-b{
-    font-weight:700;
+
+b {
+    font-weight: 700;
 }
 
 /* ::selection {
@@ -57,45 +63,47 @@ b{
     background-color: <%= theme.colors.selected_text_backgroundColor %>; 
     color:<%= theme.colors.selected_text_color %>;
 } */
+
 ::selection {
-    background:#ffe150; 
-    color:#555;
+    background: #ffe150;
+    color: #555;
 }
 
 ::-moz-selection {
-    background:#ffe150; 
-    color:#555;
+    background: #ffe150;
+    color: #555;
 }
 
 ::-webkit-selection {
-    background:#ffe150; 
-    color:#555;
+    background: #ffe150;
+    color: #555;
 }
+
 /* change the width of main */
+
 @media all and (min-width:680px) {
     body {
         width: 60vw;
         max-width: 1024px;
         min-width: 640px;
     }
-    h1.pageName{
+    h1.pageName {
         font-size: 6rem;
     }
-    
-    header { 
-        margin-top: 80px;  
+    header {
+        margin-top: 80px;
         margin-bottom: 80px;
     }
-
 }
 
 /* laptop layout */
+
 @media all and (min-width:1070px) {
-    html{
-        font-size:12px;
+    html {
+        font-size: 12px;
     }
-    header { 
-        margin-top: 120px;  
+    header {
+        margin-top: 120px;
         margin-bottom: 120px;
     }
 }

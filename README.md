@@ -22,20 +22,19 @@ A theme for [hexo](https://hexo.io/), ~~a copy🐱 of iA.net, hopefully.~~  **IN
 
 ## THE *more granularity*  PLAN
 
-- [ ] Multi-language support
-- [ ] Learn GSAP (The one [iA's Website](https://ia.net) using) to add animation.
 - [x] let header shows the current address
 - [x] find out how to add css file using relative path
+- [x] use rem to re-layout css files
+- [x] Responsive Design
+- [ ] Multi-language support
+- [ ] Learn GSAP (The one [iA's Website](https://ia.net) using) to add animation.
 - [ ] redesign
-- [ ] use rem to re-layout css files
 - [ ] I really need a design system
 - [ ] auto position the image base on scale
-- [ ] Responsive Design
 - [ ] Dark mode
-- [ ] Transition of <a> tags
+- [ ] Transition of 'a' tags
 - [ ] switch to tailwindcss
-- [ ] ~~Add Google Analytics  (Not sure.)~~
+- [ ] ~~Add Google Analytics  (won't add. don't give big companies your data.)~~
 - [ ] more......
 
 **I don't know whether this project has any Infringements of intellectual property rights or not, since I WILL KEEP THIS NON-COMMERCIAL. Thanks. Make issues if come with any trouble.**
-

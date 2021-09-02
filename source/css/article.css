@@ -1,90 +1,106 @@
-article h2{
+article h2 {
     font-size: 2.5rem;
 }
-article h3{
+
+article h3 {
     font-size: 2.4rem;
 }
-article h4{
+
+article h4 {
     font-size: 2.5rem;
 }
-article h5{
+
+article h5 {
     font-size: 2.2rem;
 }
-article h6{
+
+article h6 {
     font-size: 2rem;
 }
-article img{
-    max-width:100%;
+
+article img {
+    max-width: 100%;
 }
-article code{
-    font-family:'Cascadia Code', monospace;
+
+article code {
+    font-family: 'Cascadia Code', monospace;
 }
-article blockquote{
+
+article blockquote {
     background-color: #F0F8FF;
     border-radius: 5px;
-    padding:2em;
+    padding: 2em;
 }
-figure.highlight{
+
+figure.highlight {
     background-color: #F4F4F4;
-    line-height:1.5rem;
-    padding:10px;
+    line-height: 1.5rem;
+    padding: 10px;
     overflow: auto;
     border-radius: 5px;
-    margin:24px 0 24px 0;
+    margin: 24px 0 24px 0;
 }
-figure.highlight pre{
-    margin:10px 0 10px 0;
-    font-family:'Cascadia Code', monospace, sans-serif;
+
+figure.highlight pre {
+    margin: 10px 0 10px 0;
+    font-family: 'Cascadia Code', monospace, sans-serif;
     font-weight: 400;
-    font-size:1.5rem;
-    line-height:1.5em;
+    font-size: 1.5rem;
+    line-height: 1.5em;
 }
-figure.highlight td.gutter{
-    width:2rem;
+
+figure.highlight td.gutter {
+    width: 2rem;
     background-color: #e1e1e1;
     border-radius: 5px;
     padding-left: 0.5rem;
-    padding-right:0.5rem;
+    padding-right: 0.5rem;
     text-align: center;
-    margin-right:2rem;
+    margin-right: 2rem;
 }
-figure.highlight td.code{
-    padding-left:1rem;
+
+figure.highlight td.code {
+    padding-left: 1rem;
 }
-div.endDivider{
-    text-align:center;
-    margin:30px auto;
+
+div.endDivider {
+    text-align: center;
+    margin: 30px auto;
     color: #000000;
-    border:solid #000000 5px;
+    border: solid #000000 5px;
     width: 5em;
-    font-weight:700;
+    font-weight: 700;
 }
-article > table{
-    display:block;
+
+article>table {
+    display: block;
     table-layout: fixed;
     border-collapse: collapse;
-    width:100%;
+    width: 100%;
     overflow: auto;
-    font-size:1.5rem;
-    
+    font-size: 1.5rem;
 }
-article > table tbody{
+
+article>table tbody {
     border-radius: 5px;
 }
-article > table thead th{
+
+article>table thead th {
     word-break: keep-all;
-    padding:0.4em;
-    text-align:left;
+    padding: 0.4em;
+    text-align: left;
     background-color: #F4F4F4;
     min-width: 10em;
 }
-article > table tbody td{
-    padding:0.4em;
-}
-article > table tbody tr:nth-child(odd) {
-    background-color: #e1e1e1;
-  }
 
-article > table tbody tr:nth-child(even) {
+article>table tbody td {
+    padding: 0.4em;
+}
+
+article>table tbody tr:nth-child(odd) {
+    background-color: #e1e1e1;
+}
+
+article>table tbody tr:nth-child(even) {
     background-color: #F4F4F4;
 }

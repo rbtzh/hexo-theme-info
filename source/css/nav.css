@@ -1,31 +1,36 @@
-.siteNav{
+.siteNav {
     display: grid;
-    overflow:hidden;
+    overflow: hidden;
     margin-top: 50px;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 3.5rem 2rem;
     font-weight: 500;
 }
-.siteNav.siteNavTop{
-    height:0px;
+
+.siteNav.siteNavTop {
+    height: 0px;
     opacity: 0;
 }
-.siteNav.siteNavinPage{
-    margin-top:100px;
+
+.siteNav.siteNavinPage {
+    margin-top: 100px;
 }
-.navList{
+
+.navList {
     list-style-type: none;
     margin: 0;
-    padding: 0;    
+    padding: 0;
 }
-.navList li{
+
+.navList li {
     padding-bottom: 10px;
     text-align: left;
 }
 
 /* mobile layout, three column nav */
+
 @media all and (min-width:520px) {
-    .siteNav{
-        grid-template-columns:repeat(3,1fr);
+    .siteNav {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
