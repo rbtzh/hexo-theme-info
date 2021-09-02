@@ -46,19 +46,7 @@
     margin: 0;
 }
 
-div.seeAllContainer {
-    display: flex;
-    justify-content: center;
-    font-weight: 700;
-    color: #000000;
-}
-
-a.seeAll {
-    text-align: center;
-    border: solid #000000 5px;
-    padding-left: 2em;
-    padding-right: 2em;
-    float: left;
+.seeAll {
     padding: .5em 2em .5em 2em;
 }
 
@@ -79,6 +67,8 @@ a.seeAll {
     .list-title-date {
         flex-basis: 30%;
         max-width: 30%;
+        flex-flow: column nowrap;
+
     }
     .list-title-date h2 {
         font-size: 2rem;
@@ -89,6 +79,7 @@ a.seeAll {
     .list-title-date time {
         display: block;
         margin-top: 10px;
+        clear:right;
     }
     .list-title-date address.author {
         display: block;
@@ -97,5 +88,11 @@ a.seeAll {
     .list-excerpt {
         flex-basis: 66.66666666%;
         max-width: 66.66666666%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    a.seeAll {
+        border-color: #FAFAFA;
     }
 }

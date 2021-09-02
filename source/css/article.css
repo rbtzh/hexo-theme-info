@@ -63,16 +63,8 @@ figure.highlight td.code {
     padding-left: 1rem;
 }
 
-div.endDivider {
-    text-align: center;
-    margin: 30px auto;
-    color: #000000;
-    border: solid #000000 5px;
-    width: 5em;
-    font-weight: 700;
-}
-
 article>table {
+    margin:0 auto;
     display: block;
     table-layout: fixed;
     border-collapse: collapse;
@@ -103,4 +95,27 @@ article>table tbody tr:nth-child(odd) {
 
 article>table tbody tr:nth-child(even) {
     background-color: #F4F4F4;
+}
+
+@media (prefers-color-scheme: dark) {
+    article blockquote {
+        background-color: #002c5b;
+        color:#FAFAFA;
+    }
+    figure.highlight {
+        background-color: #22272E;
+    }
+    figure.highlight td.gutter {
+        background-color: #5A677A;
+    }
+    article>table thead th {
+        background-color: #5A677A;
+    }
+    article>table tbody tr:nth-child(odd) {
+        background-color: #22272E;
+    }
+    
+    article>table tbody tr:nth-child(even) {
+        background-color: #5A677A;
+    }
 }
