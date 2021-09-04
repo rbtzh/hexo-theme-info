@@ -26,12 +26,13 @@ A theme for [hexo](https://hexo.io/), ~~a copy🐱 of iA.net, hopefully.~~  **IN
 - [x] find out how to add css file using relative path
 - [x] use rem to re-layout css files
 - [x] Responsive Design
+- [x] Dark mode
 - [ ] Multi-language support
+- [ ] syntax highlight
 - [ ] Learn GSAP (The one [iA's Website](https://ia.net) using) to add animation.
 - [ ] redesign
 - [ ] I really need a design system
 - [ ] auto position the image base on scale
-- [ ] Dark mode
 - [ ] Transition of 'a' tags
 - [ ] switch to tailwindcss
 - [ ] ~~Add Google Analytics  (won't add. don't give big companies your data.)~~
