@@ -13,13 +13,14 @@
 <% } else { %>
 <script>
     window.addEventListener('load', () => {
-    let headerBtn = document.querySelector('#moreBtn');
+    let headerBtn = document.querySelector('.moreBtn');
     let siteNav = document.querySelector('.siteNav');
     let posContainer = document.querySelector('#headerPosContainer');
     let navFullHeightThree = 390; //Because the navbar's display is none, and I haven't found a way to get it's height, I will hard code this.Will Change later.
     let navFullHeightTwo = 478;
-    let breakpointWindth = 520
-
+    let breakpointWindth = 520;
+    let burgerUp = document.querySelector('i.breadBtn.breadTop');
+    let burgerDown = document.querySelector('i.breadBtn.breadBottom');
     if(window.innerWidth >= breakpointWindth){
         var navFullHeight = navFullHeightThree;
     }else{
@@ -27,6 +28,12 @@
     }
 
     let animateFold = true; //true => the next animation should unfold the nav bar
+
+    let btnTl1 = gsap.timeline({ paused: true, defaults: { duration: 0.3, ease:'power4.inOut' }});
+    btnTl1.to(burgerUp, {y:'6.2px'})
+    btnTl1.to(burgerDown, {y:'-6.2px'}, '<')
+    btnTl1.to(burgerUp, {rotate:45})
+    btnTl1.to(burgerDown, {rotate:-45}, '<')
 
     headerBtn.addEventListener('click', function () {
         if (animateFold) { //the process should unfold the navbar
@@ -37,7 +44,7 @@
                 height:navFullHeight,
                 opacity:1
             })
-            posContainer.style.whiteSpace = 'normal';
+            btnTl1.play()
         }
         else {
             animateFold = true;
@@ -47,7 +54,7 @@
                 height:0,
                 opacity:0
             })
-            posContainer.style.whiteSpace = 'nowrap';
+            btnTl1.reverse()
         }
     })
 
@@ -109,15 +116,9 @@
                 <span class="headerPos"><%- page.tag %></span>
             <% } %>
         </div>
-        <button id="moreBtn">
-            <svg width="100%" height="100%" viewBox="0 0 40 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                <g transform="matrix(1,0,0,0.849206,2.52435e-29,-5.09524)">
-                    <path d="M40,6.9C40,6.403 39.658,6 39.236,6L0.764,6C0.342,6 0,6.403 0,6.9L0,11.1C0,11.597 0.342,12 0.764,12L39.236,12C39.658,12 40,11.597 40,11.1L40,6.9Z"/>
-                </g>
-                <g transform="matrix(1,0,0,0.849206,2.52435e-29,13.8095)">
-                    <path d="M40,6.9C40,6.403 39.658,6 39.236,6L0.764,6C0.342,6 0,6.403 0,6.9L0,11.1C0,11.597 0.342,12 0.764,12L39.236,12C39.658,12 40,11.597 40,11.1L40,6.9Z"/>
-                </g>
-            </svg>
+        <button class="moreBtn" title="Menu">
+            <i class="breadBtn breadTop"></i>
+            <i class="breadBtn breadBottom"></i>                     
         </button>
     </div>
     <%- partial('partial/nav', {topOrPage:'top'})%>
