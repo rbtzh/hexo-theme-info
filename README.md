@@ -11,6 +11,57 @@ A theme for [hexo](https://hexo.io/), ~~a copy🐱 of iA.net, hopefully.~~  **IN
 
 - [LOVE❤️](https://en.wikipedia.org/wiki/Love)
 
+## Before You Use
+
+### Set Scaffolds
+
+```markdown
+add these to post.md's front-matter
+
+title: {{ title }}
+date: {{ date }}
+author: 
+type: "post"
+categories: 
+tags: 
+headpic: 
+excerpt: 
+```
+
+- `headpic`: This gone be the Head Picture displayed at the top of the article. Landscape orientation suggested. Paste the URL of picture you want to add on it. optional.
+
+- `excerpt`: This will displayed in all the lists as description. Although this can be generated, I strongly suggest you to add (at least 2) sentences to describe your article.  optional.
+
+  ### **add pages**
+
+  use `hexo new page <page name>` to add below pages:
+
+  - categories
+  - posts
+  - tags
+
+  then add front-matter
+
+  ```markdown
+  type: "<page name>"
+  layout: "<page name>"
+  ```
+
+  ### **Edit _config.yml**
+
+  Edit the `_config.yml` , turn off the built in syntax highlight
+
+  ```yaml
+  highlight:
+    enable: false
+    ...
+  prismjs:
+    enable: false
+  
+  ```
+
+  
+
 ## THE BASIC PLAN
 
 - [x] Index
@@ -28,7 +79,7 @@ A theme for [hexo](https://hexo.io/), ~~a copy🐱 of iA.net, hopefully.~~  **IN
 - [x] Responsive Design
 - [x] Dark mode
 - [x] Learn GSAP (The one [iA's Website](https://ia.net) using) to add animation.
-- [ ] syntax highlight
+- [x] syntax highlight
 - [ ] add pangu.js
 - [ ] redesign
 - [ ] I really need a design system
