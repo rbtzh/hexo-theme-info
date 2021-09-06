@@ -29,6 +29,7 @@ A theme for [hexo](https://hexo.io/), ~~a copy🐱 of iA.net, hopefully.~~  **IN
 - [x] Dark mode
 - [x] Learn GSAP (The one [iA's Website](https://ia.net) using) to add animation.
 - [ ] syntax highlight
+- [ ] add pangu.js
 - [ ] redesign
 - [ ] I really need a design system
 - [ ] auto position the image base on scale

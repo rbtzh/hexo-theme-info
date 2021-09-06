@@ -24,6 +24,7 @@
     width: 28px;
     padding: 0;
     border: none;
+    cursor:pointer;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: transparent;
