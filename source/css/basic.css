@@ -82,6 +82,7 @@ div.endDividerContainer {
     display: flex;
     justify-content: center;
     font-weight: 700;
+    width: 100%;
 }
 .endDivider {
     text-align: center;

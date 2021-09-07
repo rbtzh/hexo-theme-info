@@ -1,5 +1,17 @@
 <%- css('css/article.css') %>
-
+<script>
+    window.addEventListener('load', function(){
+        let imgs = document.querySelectorAll('main img');
+        imgs.forEach(function(img){
+            if(img.height/img.width > 1){
+                img.style.display = 'inline-block';
+                img.style.float="right";
+                img.style.maxWidth = '40%';
+                img.style.margin = '20px 0 20px 10%';
+            }
+        })
+    })
+</script>
 <%- page.content %>
 <div class="endDividerContainer">
     <div class="endDivider">End</div>
