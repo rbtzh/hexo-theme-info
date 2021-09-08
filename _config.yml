@@ -15,6 +15,27 @@ about:
     avatar: https://avatars.githubusercontent.com/u/52877222?v=4 
     self_instro: This is zhao-robert.
 colors: 
-    selected_text_backgroundColor: #F0F8FF 
-    selected_text_color: #262626 
-    
+    theme_color:
+        light:
+        dark:
+    background_color:
+        light:
+        dark:
+    text_color:
+        light:
+        dark:
+    selected_text_backgroundColor:
+        light: 
+        dark: 
+    selected_text_color:
+        light:
+        dark:
+    quote_block_background_color:
+        light:
+        dark:
+    code_block_background_color:
+        light:
+        dark:
+fonts:
+    main_fonts:
+    monospace_fonts:

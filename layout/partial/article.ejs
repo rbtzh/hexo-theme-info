@@ -2,14 +2,39 @@
 <script>
     window.addEventListener('load', function(){
         let imgs = document.querySelectorAll('main img');
-        imgs.forEach(function(img){
-            if(img.height/img.width > 1){
-                img.style.display = 'inline-block';
-                img.style.float="right";
-                img.style.maxWidth = '40%';
-                img.style.margin = '20px 0 20px 10%';
+        if(window.innerWidth >= 520){
+            imgs.forEach(function(img){
+                if(img.height/img.width > 1){
+                    img.style.display = 'inline-block';
+                    img.style.float="right";
+                    img.style.maxWidth = '40%';
+                    img.style.margin = '20px 0 20px 10%';
+                }
+            })
+        }
+        window.addEventListener('resize', function(){
+            if(window.innerWidth >= 520){
+                imgs.forEach(function(img){
+                    if(img.height/img.width > 1){
+                        img.style.display = 'inline-block';
+                        img.style.float="right";
+                        img.style.maxWidth = '40%';
+                        img.style.margin = '20px 0 20px 10%';
+                    }
+                })
+            }
+            else{
+                imgs.forEach(function(img){
+                    if(img.height/img.width > 1){
+                        img.style.display = 'block';
+                        img.style.float="left";
+                        img.style.maxWidth = '100%';
+                        img.style.margin = '20px 0 20px 0';
+                    }
+                })
             }
         })
+        
     })
 </script>
 <%- page.content %>
