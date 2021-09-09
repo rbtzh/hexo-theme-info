@@ -68,7 +68,6 @@
         flex-basis: 30%;
         max-width: 30%;
         flex-flow: column nowrap;
-
     }
     .list-title-date h2 {
         font-size: 2rem;
@@ -79,7 +78,7 @@
     .list-title-date time {
         display: block;
         margin-top: 10px;
-        clear:right;
+        clear: right;
     }
     .list-title-date address.author {
         display: block;

@@ -6,6 +6,7 @@ html {
 body {
     width: 90vw;
     margin: 0 auto;
+    color: #111;
     background-color: #FAFAFA;
     font-family: 'Inter', 'Source Han Sans SC', sans-serif;
     font-weight: 500;
@@ -78,12 +79,14 @@ b {
     background: #ffe150;
     color: #555;
 }
+
 div.endDividerContainer {
     display: flex;
     justify-content: center;
     font-weight: 700;
     width: 100%;
 }
+
 .endDivider {
     text-align: center;
     border: solid #000000 5px;
@@ -121,31 +124,30 @@ div.endDividerContainer {
         margin-bottom: 120px;
     }
 }
+
 @media (prefers-color-scheme: dark) {
     /* Dark theme styles go here */
-    body{
+    body {
         color: #FAFAFA;
         background-color: #141414;
     }
-    a{
+    a {
         color: #FAFAFA;
     }
     ::selection {
         background: #C7B03E;
-        color:#FAFAFA;
+        color: #FAFAFA;
     }
-    
     ::-moz-selection {
         background: #C7B03E;
-        color:#FAFAFA;
+        color: #FAFAFA;
     }
-    
     ::-webkit-selection {
         background: #C7B03E;
-        color:#FAFAFA;
+        color: #FAFAFA;
     }
     .endDivider {
         border: solid #FAFAFA 5px;
         color: #FAFAFA;
     }
-  }
+}

@@ -64,7 +64,7 @@ figure.highlight td.code {
 }
 
 article>table {
-    margin:0 auto;
+    margin: 0 auto;
     display: block;
     table-layout: fixed;
     border-collapse: collapse;
@@ -100,7 +100,7 @@ article>table tbody tr:nth-child(even) {
 @media (prefers-color-scheme: dark) {
     article blockquote {
         background-color: #002c5b;
-        color:#FAFAFA;
+        color: #FAFAFA;
     }
     figure.highlight {
         background-color: #22272E;
@@ -114,7 +114,6 @@ article>table tbody tr:nth-child(even) {
     article>table tbody tr:nth-child(odd) {
         background-color: #22272E;
     }
-    
     article>table tbody tr:nth-child(even) {
         background-color: #5A677A;
     }

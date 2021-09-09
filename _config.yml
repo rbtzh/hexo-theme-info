@@ -16,26 +16,26 @@ about:
     self_instro: This is zhao-robert.
 colors: 
     theme_color:
-        light:
-        dark:
+        light: '#ffe150'
+        dark: '#ffe150'
     background_color:
-        light:
-        dark:
+        light: '#FAFAFA'
+        dark: '#141414'
     text_color:
-        light:
-        dark:
+        light: '#111'
+        dark: '#FAFAFA'
     selected_text_backgroundColor:
-        light: 
-        dark: 
+        light: '#ffe150'
+        dark: '#C7B03E'
     selected_text_color:
-        light:
-        dark:
+        light: '#555'
+        dark: '#FAFAFA;'
     quote_block_background_color:
-        light:
-        dark:
+        light: '#F0F8FF'
+        dark: '#002c5b'
     code_block_background_color:
-        light:
-        dark:
+        light: '#F0F8FF'
+        dark: '#002C5B'
 fonts:
-    main_fonts:
-    monospace_fonts:
+    main_fonts: "'Inter', 'Source Han Sans SC', sans-serif"
+    monospace_fonts: "'Cascadia Code', monospace"

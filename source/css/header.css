@@ -24,7 +24,7 @@
     width: 28px;
     padding: 0;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: transparent;
@@ -52,7 +52,7 @@
 }
 
 #logo:hover {
-    color: tomato
+    color: #ffe150;
 }
 
 @media (prefers-color-scheme: dark) {
